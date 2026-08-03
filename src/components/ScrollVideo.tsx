@@ -1,12 +1,13 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { HERO_POSTER_LOCAL, HERO_VIDEO_URL } from "../lib/constants";
 
-const MAX_FRAMES = 48;
-const MIN_FRAMES = 20;
-const FRAMES_PER_SECOND = 8;
+const MAX_FRAMES = 20;
+const MIN_FRAMES = 12;
+const FRAMES_PER_SECOND = 2;
 const FRAME_MAX_WIDTH = 960;
 const LERP_FACTOR = 0.18;
 const FADE_MS = 600;
+const READY_SAFETY_TIMEOUT_MS = 15000;
 
 /**
  * Full-viewport, scroll-scrubbed video background.
@@ -28,6 +29,11 @@ const FADE_MS = 600;
  * extraction is in progress -- it crossfades straight to the smooth
  * blended-canvas path, or to the raw-video fallback only if extraction
  * failed (by which point the video is done being seeked around).
+ *
+ * Frame count is kept deliberately low: each frame costs one real network
+ * seek against the remote video, and over a real (non-localhost) connection
+ * that adds up fast. A small `loading` indicator surfaces while extraction
+ * is in flight so the wait doesn't read as broken.
  */
 export default function ScrollVideo() {
   const posterRef = useRef<HTMLImageElement | null>(null);
@@ -42,6 +48,8 @@ export default function ScrollVideo() {
   const framesReadyRef = useRef(false);
   const lastSeekTimeRef = useRef(-1);
   const extractionDoneRef = useRef(false);
+
+  const [loading, setLoading] = useState(true);
 
   // --- scroll -> target progress -------------------------------------
   useEffect(() => {
@@ -65,6 +73,10 @@ export default function ScrollVideo() {
   // --- frame-cache extraction (preferred smooth path) -----------------
   useEffect(() => {
     let cancelled = false;
+    const safetyTimer = window.setTimeout(
+      () => setLoading(false),
+      READY_SAFETY_TIMEOUT_MS,
+    );
 
     async function waitFor<K extends keyof HTMLElementEventMap>(
       el: HTMLElement,
@@ -159,11 +171,14 @@ export default function ScrollVideo() {
         // <video> seek path.
       })
       .finally(() => {
+        window.clearTimeout(safetyTimer);
         extractionDoneRef.current = true;
+        if (!cancelled) setLoading(false);
       });
 
     return () => {
       cancelled = true;
+      window.clearTimeout(safetyTimer);
     };
   }, []);
 
@@ -334,6 +349,19 @@ export default function ScrollVideo() {
       {/* Dark scrim: the source footage is a pale blue-grey, not dark --
           without this, white text has no reliable contrast against it. */}
       <div className="absolute inset-0 bg-brand-dark/6" />
+
+      {/* Small, non-blocking loading indicator -- the rest of the page
+          stays visible/interactive while the hero background finishes. */}
+      <div
+        className={`absolute bottom-5 left-5 flex items-center gap-2 rounded-full border border-white/15 bg-brand-dark/70 px-3 py-1.5 backdrop-blur-md transition-opacity duration-500 sm:bottom-8 sm:left-8 ${
+          loading ? "opacity-100" : "pointer-events-none opacity-0"
+        }`}
+      >
+        <span className="h-2 w-2 animate-pulse rounded-full bg-brand-orange" />
+        <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/70">
+          Loading visuals
+        </span>
+      </div>
     </div>
   );
 }
