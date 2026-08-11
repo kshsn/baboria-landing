@@ -55,13 +55,13 @@ export default function SectionOne() {
         <Reveal delay={420}>
           <div className="flex flex-col gap-1.5 rounded-xl bg-white/15 p-4 backdrop-blur-md">
             <span className="text-sm font-medium text-white">Talk to us</span>
-            <button
-              type="button"
+            <a
+              href="#contact"
               className="mt-1.5 inline-flex w-fit items-center gap-1 rounded-full bg-gradient-to-r from-brand-orange to-brand-pink px-4 py-2 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90"
             >
               Book 15-mins call
               <ChevronRight size={14} />
-            </button>
+            </a>
           </div>
         </Reveal>
       </div>
