@@ -34,8 +34,20 @@ export default function SectionContact() {
     return () => ctx.revert();
   }, []);
 
-  function handleSubmit(event: React.FormEvent) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    const form = event.currentTarget;
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
+      .value;
+
+    const subject = `New inquiry from ${name}`;
+    const body = `${message}\n\nFrom: ${name} (${email})`;
+    window.location.href = `mailto:omar@baboria.com?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(body)}`;
+
     setSubmitted(true);
   }
 
@@ -69,11 +81,11 @@ export default function SectionContact() {
 
           <div data-reveal className="mt-8 flex flex-col gap-3">
             <a
-              href="mailto:hello@baboria.com"
+              href="mailto:omar@baboria.com"
               className="flex items-center gap-2 text-sm text-white/80 transition-colors duration-300 hover:text-brand-orange"
             >
               <Mail size={16} />
-              hello@baboria.com
+              omar@baboria.com
             </a>
             <span className="flex items-center gap-2 text-sm text-white/60">
               <MapPin size={16} />
