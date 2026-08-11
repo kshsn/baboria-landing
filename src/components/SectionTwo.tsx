@@ -67,12 +67,12 @@ export default function SectionTwo() {
               Run the demo
               <ChevronRight size={14} />
             </button>
-            <button
-              type="button"
+            <a
+              href="#contact"
               className="rounded-full border border-brand-orange/40 bg-white/10 px-5 py-2.5 text-xs text-white backdrop-blur-md transition-colors duration-300 hover:border-brand-orange hover:text-brand-orange sm:text-sm"
             >
               Free consultation
-            </button>
+            </a>
           </Reveal>
         </div>
 
