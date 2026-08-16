@@ -14,7 +14,7 @@ export default function SectionContact() {
 
     const subject = `New inquiry from ${name}`;
     const body = `${message}\n\nFrom: ${name} (${email})`;
-    window.location.href = `mailto:omar@baboria.com?subject=${encodeURIComponent(
+    window.location.href = `mailto:info@baboria.com?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(body)}`;
 
@@ -41,11 +41,11 @@ export default function SectionContact() {
 
           <div className="mt-8 flex flex-col gap-3">
             <a
-              href="mailto:omar@baboria.com"
+              href="mailto:info@baboria.com"
               className="flex items-center gap-2 text-sm text-white/80 transition-colors duration-300 hover:text-signal-orange"
             >
               <Mail size={16} />
-              omar@baboria.com
+              info@baboria.com
             </a>
             <span className="flex items-center gap-2 text-sm text-white/60">
               <MapPin size={16} />
