@@ -62,14 +62,14 @@ export default function SectionTwo() {
           <Reveal delay={420} className="mt-8 flex flex-wrap gap-3">
             <button
               type="button"
-              className="inline-flex items-center gap-1 rounded-full bg-gradient-to-r from-brand-orange to-brand-pink px-5 py-2.5 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:text-sm"
+              className="inline-flex items-center gap-1 rounded-full bg-signal-orange px-5 py-2.5 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:text-sm"
             >
               Run the demo
               <ChevronRight size={14} />
             </button>
             <a
               href="#contact"
-              className="rounded-full border border-brand-orange/40 bg-white/10 px-5 py-2.5 text-xs text-white backdrop-blur-md transition-colors duration-300 hover:border-brand-orange hover:text-brand-orange sm:text-sm"
+              className="rounded-full border border-signal-orange/40 bg-white/10 px-5 py-2.5 text-xs text-white backdrop-blur-md transition-colors duration-300 hover:border-signal-orange hover:text-signal-orange sm:text-sm"
             >
               Free consultation
             </a>
@@ -85,7 +85,7 @@ export default function SectionTwo() {
                 i < CAPABILITIES.length - 1 ? "border-b border-white/15" : ""
               }`}
             >
-              <span className="font-mono text-[11px] tracking-[0.15em] text-brand-orange/80">
+              <span className="font-sans text-[11px] font-semibold tracking-[0.15em] text-signal-orange/80">
                 {item.index}
               </span>
               <div>
@@ -95,7 +95,7 @@ export default function SectionTwo() {
                   </span>
                   <ChevronRight
                     size={16}
-                    className="text-white/40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-brand-orange"
+                    className="text-white/40 transition-all duration-300 group-hover:translate-x-0.5 group-hover:text-signal-orange"
                   />
                 </div>
                 <p className="mt-1.5 text-sm leading-relaxed text-white/70">
