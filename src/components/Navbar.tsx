@@ -11,10 +11,10 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/15">
       <div className="flex items-center justify-between px-5 py-4 sm:px-8 md:px-12">
-        <Reveal delay={0} className="flex items-center gap-2">
-          <Logo size={26} />
-          <span className="font-display text-lg font-semibold tracking-tight text-white sm:text-xl">
-            baboria
+        <Reveal delay={0} className="flex items-center gap-2.5">
+          <Logo height={20} surface="dark" />
+          <span className="font-display text-sm font-light uppercase tracking-[0.3em] text-white sm:text-base">
+            Baboria
           </span>
         </Reveal>
 
@@ -26,7 +26,7 @@ export default function Navbar() {
               href={link.href}
               delay={100 + i * 100}
             >
-              <span className="text-sm font-bold text-white transition-colors duration-300 hover:text-brand-orange">
+              <span className="text-sm font-bold text-white transition-colors duration-300 hover:text-signal-orange">
                 {link.label}
               </span>
             </Reveal>
@@ -36,7 +36,7 @@ export default function Navbar() {
         <Reveal delay={500}>
           <a
             href="#contact"
-            className="rounded-full bg-gradient-to-r from-brand-orange to-brand-pink px-4 py-2 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:px-5 sm:text-sm"
+            className="rounded-full bg-signal-orange px-4 py-2 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:px-5 sm:text-sm"
           >
             Get Free Consultation
           </a>
