@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", ui-sans-serif, system-ui, sans-serif;
 
-  --color-brand-dark: #0b1f3a;
-  --color-brand-slate: #334155;
-  --color-brand-light: #f1f5f9;
-  --color-brand-orange: #ff6a00;
-  --color-brand-pink: #ff2e8a;
+  --color-navy-deep: #0e1938;
+  --color-baboria-navy: #17275c;
+  --color-signal-orange: #ec3013;
+  --color-navy-light: #7f9ae0;
+  --color-slate: #6b7899;
+  --color-ground: #f3f2f2;
 }
 
 html,
 body {
-  background-color: var(--color-brand-dark);
+  background-color: var(--color-navy-deep);
   font-family: var(--font-sans);
 }
