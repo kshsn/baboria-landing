@@ -1,38 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { ChevronRight, Mail, MapPin } from "lucide-react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function SectionContact() {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
   const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    const section = sectionRef.current;
-    if (!section) return;
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      return;
-    }
-
-    const ctx = gsap.context(() => {
-      gsap.from("[data-reveal]", {
-        y: 32,
-        opacity: 0,
-        duration: 0.7,
-        ease: "power3.out",
-        stagger: 0.1,
-        scrollTrigger: {
-          trigger: section,
-          start: "top 75%",
-        },
-      });
-    }, section);
-
-    return () => ctx.revert();
-  }, []);
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -53,33 +23,23 @@ export default function SectionContact() {
 
   return (
     <section
-      ref={sectionRef}
       id="contact"
-      className="relative overflow-hidden bg-navy-deep/70 px-5 py-24 sm:px-8 md:px-12"
+      className="relative overflow-hidden bg-navy-deep px-5 py-24 sm:px-8 md:px-12"
     >
       <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-2 md:items-center">
         <div>
-          <span
-            data-reveal
-            className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-signal-orange drop-shadow-md"
-          >
+          <span className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-signal-orange">
             / Get In Touch
           </span>
-          <h2
-            data-reveal
-            className="font-display mt-3 text-4xl font-semibold leading-[1.05] text-white drop-shadow-lg sm:text-5xl"
-          >
+          <h2 className="font-display mt-3 text-4xl font-semibold leading-[1.05] text-white sm:text-5xl">
             Let's build what's next.
           </h2>
-          <p
-            data-reveal
-            className="mt-4 max-w-sm text-sm leading-relaxed text-white/70 drop-shadow-md sm:text-base"
-          >
+          <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/70 sm:text-base">
             Tell us what you're trying to build — software, automation, or
             carrier billing — and we'll get back to you within one business day.
           </p>
 
-          <div data-reveal className="mt-8 flex flex-col gap-3">
+          <div className="mt-8 flex flex-col gap-3">
             <a
               href="mailto:omar@baboria.com"
               className="flex items-center gap-2 text-sm text-white/80 transition-colors duration-300 hover:text-signal-orange"
@@ -95,7 +55,6 @@ export default function SectionContact() {
         </div>
 
         <form
-          data-reveal
           onSubmit={handleSubmit}
           className="flex flex-col gap-4 rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur-md sm:p-8"
         >
