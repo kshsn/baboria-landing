@@ -67,7 +67,7 @@ export default function SectionProducts() {
     <section
       ref={sectionRef}
       id="products"
-      className="relative h-screen min-h-[100svh] overflow-hidden bg-brand-dark/40"
+      className="relative h-screen min-h-[100svh] overflow-hidden bg-navy-deep/40"
     >
       <div
         ref={trackRef}
@@ -75,7 +75,7 @@ export default function SectionProducts() {
       >
         {/* intro panel -- travels with the cards as the first "slide" */}
         <div className="w-[80vw] shrink-0 sm:w-[380px]">
-          <span className="font-mono text-xs uppercase tracking-[0.15em] text-brand-orange drop-shadow-md">
+          <span className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-signal-orange drop-shadow-md">
             / Our Products
           </span>
           <h2 className="font-display mt-3 text-4xl font-semibold leading-[1.05] text-white drop-shadow-lg sm:text-5xl">
@@ -92,7 +92,7 @@ export default function SectionProducts() {
         {PRODUCTS.map((product) => (
           <div
             key={product.title}
-            className="flex w-[80vw] shrink-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-brand-dark/85 shadow-2xl backdrop-blur-sm sm:w-[400px]"
+            className="flex w-[80vw] shrink-0 flex-col overflow-hidden rounded-2xl border border-white/10 bg-navy-deep/85 shadow-2xl backdrop-blur-sm sm:w-[400px]"
           >
             <div className="relative h-56 w-full overflow-hidden sm:h-60">
               <img
@@ -100,13 +100,13 @@ export default function SectionProducts() {
                 alt={product.title}
                 className="h-full w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-brand-dark/10 to-transparent" />
-              <span className="absolute top-4 left-4 font-mono text-xs tracking-[0.15em] text-brand-orange drop-shadow-md">
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/10 to-transparent" />
+              <span className="absolute top-4 left-4 font-sans text-xs font-semibold tracking-[0.15em] text-signal-orange drop-shadow-md">
                 {product.index}
               </span>
             </div>
             <div className="flex flex-1 flex-col gap-2 p-6">
-              <span className="font-mono text-[11px] uppercase tracking-[0.15em] text-brand-orange/80">
+              <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-signal-orange/80">
                 {product.tag}
               </span>
               <h3 className="font-display text-2xl font-semibold text-white">
@@ -117,7 +117,7 @@ export default function SectionProducts() {
               </p>
               <button
                 type="button"
-                className="mt-3 inline-flex w-fit items-center gap-1 text-sm font-medium text-white transition-colors duration-300 hover:text-brand-orange"
+                className="mt-3 inline-flex w-fit items-center gap-1 text-sm font-medium text-white transition-colors duration-300 hover:text-signal-orange"
               >
                 Learn more
                 <ChevronRight size={14} />
