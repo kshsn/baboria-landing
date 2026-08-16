@@ -321,7 +321,7 @@ export default function ScrollVideo() {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-0 overflow-hidden bg-brand-dark pointer-events-none">
+    <div className="fixed inset-0 z-0 overflow-hidden bg-navy-deep pointer-events-none">
       <img
         ref={posterRef}
         src={HERO_POSTER_LOCAL}
@@ -348,17 +348,17 @@ export default function ScrollVideo() {
       />
       {/* Dark scrim: the source footage is a pale blue-grey, not dark --
           without this, white text has no reliable contrast against it. */}
-      <div className="absolute inset-0 bg-brand-dark/6" />
+      <div className="absolute inset-0 bg-navy-deep/6" />
 
       {/* Small, non-blocking loading indicator -- the rest of the page
           stays visible/interactive while the hero background finishes. */}
       <div
-        className={`absolute bottom-5 left-5 flex items-center gap-2 rounded-full border border-white/15 bg-brand-dark/70 px-3 py-1.5 backdrop-blur-md transition-opacity duration-500 sm:bottom-8 sm:left-8 ${
+        className={`absolute bottom-5 left-5 flex items-center gap-2 rounded-full border border-white/15 bg-navy-deep/70 px-3 py-1.5 backdrop-blur-md transition-opacity duration-500 sm:bottom-8 sm:left-8 ${
           loading ? "opacity-100" : "pointer-events-none opacity-0"
         }`}
       >
-        <span className="h-2 w-2 animate-pulse rounded-full bg-brand-orange" />
-        <span className="font-mono text-[10px] uppercase tracking-[0.15em] text-white/70">
+        <span className="h-2 w-2 animate-pulse rounded-full bg-signal-orange" />
+        <span className="font-sans text-[10px] font-semibold uppercase tracking-[0.15em] text-white/70">
           Loading visuals
         </span>
       </div>
