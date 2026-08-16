@@ -55,13 +55,13 @@ export default function SectionContact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative overflow-hidden bg-brand-dark/70 px-5 py-24 sm:px-8 md:px-12"
+      className="relative overflow-hidden bg-navy-deep/70 px-5 py-24 sm:px-8 md:px-12"
     >
       <div className="mx-auto grid max-w-5xl gap-12 md:grid-cols-2 md:items-center">
         <div>
           <span
             data-reveal
-            className="font-mono text-xs uppercase tracking-[0.15em] text-brand-orange drop-shadow-md"
+            className="font-sans text-xs font-semibold uppercase tracking-[0.15em] text-signal-orange drop-shadow-md"
           >
             / Get In Touch
           </span>
@@ -82,7 +82,7 @@ export default function SectionContact() {
           <div data-reveal className="mt-8 flex flex-col gap-3">
             <a
               href="mailto:omar@baboria.com"
-              className="flex items-center gap-2 text-sm text-white/80 transition-colors duration-300 hover:text-brand-orange"
+              className="flex items-center gap-2 text-sm text-white/80 transition-colors duration-300 hover:text-signal-orange"
             >
               <Mail size={16} />
               omar@baboria.com
@@ -118,7 +118,7 @@ export default function SectionContact() {
                   type="text"
                   required
                   placeholder="Your name"
-                  className="rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/40 focus:border-brand-orange focus:outline-none"
+                  className="rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/40 focus:border-signal-orange focus:outline-none"
                 />
               </div>
               <div className="flex flex-col gap-1.5">
@@ -134,7 +134,7 @@ export default function SectionContact() {
                   type="email"
                   required
                   placeholder="you@company.com"
-                  className="rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/40 focus:border-brand-orange focus:outline-none"
+                  className="rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/40 focus:border-signal-orange focus:outline-none"
                 />
               </div>
               <div className="flex flex-col gap-1.5">
@@ -150,12 +150,12 @@ export default function SectionContact() {
                   required
                   rows={4}
                   placeholder="Tell us about your project"
-                  className="rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/40 focus:border-brand-orange focus:outline-none"
+                  className="rounded-lg border border-white/15 bg-white/5 px-3 py-2 text-sm text-white placeholder:text-white/40 focus:border-signal-orange focus:outline-none"
                 />
               </div>
               <button
                 type="submit"
-                className="mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-gradient-to-r from-brand-orange to-brand-pink px-5 py-2.5 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:text-sm"
+                className="mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-signal-orange px-5 py-2.5 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:text-sm"
               >
                 Send message
                 <ChevronRight size={14} />
