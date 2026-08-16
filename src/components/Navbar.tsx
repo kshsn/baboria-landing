@@ -1,4 +1,3 @@
-import { Reveal } from "./Reveal";
 import Logo from "./Logo";
 
 const NAV_LINKS = [
@@ -11,36 +10,29 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/15">
       <div className="flex items-center justify-between px-5 py-4 sm:px-8 md:px-12">
-        <Reveal delay={0} className="flex items-center gap-2.5">
+        <div className="flex items-center gap-2.5">
           <Logo height={20} surface="dark" />
           <span className="font-display text-sm font-light uppercase tracking-[0.3em] text-white sm:text-base">
             Baboria
           </span>
-        </Reveal>
+        </div>
 
         <div className="hidden items-center gap-8 md:flex lg:gap-10">
-          {NAV_LINKS.map((link, i) => (
-            <Reveal
-              key={link.label}
-              as="a"
-              href={link.href}
-              delay={100 + i * 100}
-            >
+          {NAV_LINKS.map((link) => (
+            <a key={link.label} href={link.href}>
               <span className="text-sm font-bold text-white transition-colors duration-300 hover:text-signal-orange">
                 {link.label}
               </span>
-            </Reveal>
+            </a>
           ))}
         </div>
 
-        <Reveal delay={500}>
-          <a
-            href="#contact"
-            className="rounded-full bg-signal-orange px-4 py-2 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:px-5 sm:text-sm"
-          >
-            Get Free Consultation
-          </a>
-        </Reveal>
+        <a
+          href="#contact"
+          className="rounded-full bg-signal-orange px-4 py-2 text-xs font-medium text-white transition-opacity duration-300 hover:opacity-90 sm:px-5 sm:text-sm"
+        >
+          Get Free Consultation
+        </a>
       </div>
     </nav>
   );
