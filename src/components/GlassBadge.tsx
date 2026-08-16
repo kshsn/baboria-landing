@@ -9,7 +9,7 @@ export default function GlassBadge({
 }) {
   return (
     <div
-      className={`inline-block border-l-2 border-brand-orange bg-white/15 px-3 py-1.5 font-mono text-[11px] uppercase tracking-[0.15em] text-white backdrop-blur-md ${className}`}
+      className={`inline-block border-l-2 border-signal-orange bg-white/15 px-3 py-1.5 font-sans text-[11px] font-semibold uppercase tracking-[0.15em] text-white backdrop-blur-md ${className}`}
     >
       {children}
     </div>
