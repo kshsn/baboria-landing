@@ -1,0 +1,2749 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BABORIA is a technology enabler: AI automation, telecom services, FMCG supply chains and digital media under one operating framework. Cairo, Egypt.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>BABORIA | Technology Enabler &amp; Solutions | شركة أم وممكّن تكنولوجي</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Actor&amp;family=Montserrat:wght@300&amp;family=Alexandria:wght@300;400;500;600;700&amp;family=Reddit+Sans:ital,wght@0,300..800;1,300..800&amp;family=Tajawal:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      /* Bright Mode Palette (Default) */
+      --bg-canvas: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-card-subtle: #f1f5f9;
+      --midnight-blue: #0d1837;
+      --purple-deep: #221233;
+      --emerald-deep: #032b1e;
+      --mint-accent: #059669;
+      --mint-light: #10b981;
+      --lilac-accent: #7e22ce;
+      --lilac-light: #8b5fa6;
+      --text-main: #0d1837;
+      --text-muted: #475569;
+      --border-grid: rgba(13, 24, 55, 0.12);
+      --border-highlight: rgba(5, 150, 105, 0.4);
+      --header-bg: rgba(248, 250, 252, 0.92);
+      --footer-bg: #edf2f7;
+      --strip-bg: linear-gradient(135deg, #0d1837 0%, #17244a 100%);
+      --strip-text: #ffffff;
+      --strip-muted: rgba(255, 255, 255, 0.8);
+      --svg-bg: #f8fafc;
+      --svg-card-bg: #f1f5f9;
+      --svg-node-fill: #ffffff;
+      --svg-node-border: #0d1837;
+      --svg-text-color: #0d1837;
+      --badge-purple-bg: rgba(126, 34, 206, 0.08);
+      --badge-purple-border: rgba(126, 34, 206, 0.25);
+      --shadow-card: 0 4px 20px rgba(13, 24, 55, 0.06);
+      --shadow-card-hover: 0 12px 35px rgba(13, 24, 55, 0.12);
+      --font-heading: 'Actor', 'Tajawal', sans-serif;
+      --font-body: 'Reddit Sans', 'Tajawal', sans-serif;
+      --font-arabic: 'Tajawal', 'Alexandria', sans-serif;
+    }
+
+    /* Approved Dark Mode Palette via #theme-toggle:checked */
+    #theme-toggle:checked ~ .page-wrapper,
+    :root:has(#theme-toggle:checked),
+    body:has(#theme-toggle:checked) {
+      --bg-canvas: #070c1a;
+      --bg-card: #0d1837;
+      --bg-card-subtle: #132047;
+      --midnight-blue: #0d1837;
+      --purple-deep: #1d102b;
+      --emerald-deep: #022419;
+      --mint-accent: #1eb580;
+      --mint-light: #34d399;
+      --lilac-accent: #a855f7;
+      --lilac-light: #c084fc;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-grid: rgba(255, 255, 255, 0.09);
+      --border-highlight: rgba(30, 181, 128, 0.5);
+      --header-bg: rgba(7, 12, 26, 0.92);
+      --footer-bg: #040711;
+      --strip-bg: linear-gradient(135deg, #070c1a 0%, #0d1837 100%);
+      --strip-text: #ffffff;
+      --strip-muted: rgba(255, 255, 255, 0.7);
+      --svg-bg: #070c1a;
+      --svg-card-bg: #132047;
+      --svg-node-fill: #132047;
+      --svg-node-border: #1eb580;
+      --svg-text-color: #f8fafc;
+      --badge-purple-bg: rgba(168, 85, 247, 0.15);
+      --badge-purple-border: rgba(168, 85, 247, 0.35);
+      --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.3);
+      --shadow-card-hover: 0 12px 35px rgba(0, 0, 0, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .page-wrapper {
+      padding-top: 80px;
+      min-height: 100vh;
+      background-color: var(--bg-canvas);
+      color: var(--text-main);
+      background-image: 
+        linear-gradient(to right, var(--border-grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--border-grid) 1px, transparent 1px);
+      background-size: 60px 60px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      letter-spacing: -0.02em;
+      font-weight: 400;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Language Switch Visibility Rules */
+    .lang-ar {
+      display: none !important;
+    }
+
+    .lang-en {
+      display: inline-block;
+    }
+
+    p.lang-en, div.lang-en, h1.lang-en, h2.lang-en, h3.lang-en, h4.lang-en, ul.lang-en, span.lang-en-block {
+      display: block;
+    }
+
+    /* When Arabic (#lang-toggle:checked) */
+    #lang-toggle:checked ~ .page-wrapper .lang-en,
+    html:has(#lang-toggle:checked) .lang-en,
+    body:has(#lang-toggle:checked) .lang-en {
+      display: none !important;
+    }
+
+    #lang-toggle:checked ~ .page-wrapper .lang-ar,
+    html:has(#lang-toggle:checked) .lang-ar,
+    body:has(#lang-toggle:checked) .lang-ar {
+      display: inline-block !important;
+    }
+
+    #lang-toggle:checked ~ .page-wrapper p.lang-ar,
+    #lang-toggle:checked ~ .page-wrapper div.lang-ar,
+    #lang-toggle:checked ~ .page-wrapper h1.lang-ar,
+    #lang-toggle:checked ~ .page-wrapper h2.lang-ar,
+    #lang-toggle:checked ~ .page-wrapper h3.lang-ar,
+    #lang-toggle:checked ~ .page-wrapper h4.lang-ar,
+    #lang-toggle:checked ~ .page-wrapper ul.lang-ar,
+    html:has(#lang-toggle:checked) p.lang-ar,
+    html:has(#lang-toggle:checked) div.lang-ar,
+    html:has(#lang-toggle:checked) h1.lang-ar,
+    html:has(#lang-toggle:checked) h2.lang-ar,
+    html:has(#lang-toggle:checked) h3.lang-ar,
+    html:has(#lang-toggle:checked) h4.lang-ar,
+    html:has(#lang-toggle:checked) ul.lang-ar {
+      display: block !important;
+    }
+
+    /* RTL Layout Rules */
+    #lang-toggle:checked ~ .page-wrapper,
+    html:has(#lang-toggle:checked),
+    body:has(#lang-toggle:checked) {
+      direction: rtl;
+      text-align: right;
+      font-family: var(--font-arabic);
+    }
+
+    /* Layout Utility */
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-padding {
+      padding: 100px 0;
+    }
+
+    /* Section Headers */
+    .section-header {
+      margin-bottom: 60px;
+      position: relative;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--mint-accent);
+      margin-bottom: 16px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .section-tag::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background-color: var(--mint-accent);
+      transition: background-color 0.3s ease;
+    }
+
+    #lang-toggle:checked ~ .page-wrapper .section-tag::before {
+      margin-left: 8px;
+      margin-right: 0;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      color: var(--text-main);
+      transition: color 0.3s ease;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1.125rem;
+      margin-top: 12px;
+      max-width: 680px;
+      transition: color 0.3s ease;
+    }
+
+    /* Header Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      z-index: 300;
+      background: var(--header-bg);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-grid);
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .brand-logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo {
+      height: 38px;
+      width: auto;
+      display: block;
+    }
+
+    /* Header Signature Motion Widget */
+    .header-signature {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 4px 10px;
+      background: var(--badge-purple-bg);
+      border: 1px solid var(--badge-purple-border);
+      border-radius: 20px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav.nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .nav-link {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      transition: color 0.25s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      color: var(--text-main);
+    }
+
+    /* Actions & Switches Container */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .control-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--text-main);
+      background: var(--bg-card);
+      border: 1px solid var(--border-grid);
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+      transition: all 0.25s ease;
+      box-shadow: var(--shadow-card);
+    }
+
+    .control-btn:hover {
+      border-color: var(--mint-accent);
+      color: var(--mint-accent);
+      transform: translateY(-1px);
+    }
+
+    /* Theme Toggle Button Label Logic */
+    .theme-icon-sun,
+    .theme-label-light {
+      display: none !important;
+    }
+
+    .theme-icon-moon,
+    .theme-label-dark {
+      display: inline-block !important;
+    }
+
+    #theme-toggle:checked ~ .page-wrapper .theme-icon-moon,
+    #theme-toggle:checked ~ .page-wrapper .theme-label-dark,
+    body:has(#theme-toggle:checked) .theme-icon-moon,
+    body:has(#theme-toggle:checked) .theme-label-dark {
+      display: none !important;
+    }
+
+    #theme-toggle:checked ~ .page-wrapper .theme-icon-sun,
+    #theme-toggle:checked ~ .page-wrapper .theme-label-light,
+    body:has(#theme-toggle:checked) .theme-icon-sun,
+    body:has(#theme-toggle:checked) .theme-label-light {
+      display: inline-block !important;
+    }
+
+    /* Single CTA Placeholder Button */
+    .cta-placeholder-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      background-color: var(--mint-accent);
+      border: 1px solid var(--mint-accent);
+      border-radius: 4px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 14px rgba(5, 150, 105, 0.25);
+    }
+
+    .cta-placeholder-btn:hover {
+      background-color: transparent;
+      color: var(--mint-accent);
+      box-shadow: 0 4px 20px rgba(5, 150, 105, 0.35);
+    }
+
+    /* BABORIA Signature Motion Component (Dash + Three Dots) */
+    .signature-motion-container {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      vertical-align: middle;
+    }
+
+    .signature-dash {
+      width: 18px;
+      height: 3.5px;
+      background-color: var(--lilac-accent);
+      border-radius: 2px;
+      animation: sigDashPulse 2.4s ease-in-out infinite;
+      transition: background-color 0.3s ease;
+    }
+
+    .signature-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: var(--lilac-accent);
+      opacity: 0.35;
+      transform: scale(0.85);
+      animation: sigDotSeq 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transition: background-color 0.3s ease;
+    }
+
+    .sig-dot-1 { animation-delay: 0.25s; }
+    .sig-dot-2 { animation-delay: 0.55s; }
+    .sig-dot-3 { animation-delay: 0.85s; }
+
+    @keyframes sigDashPulse {
+      0%, 100% { opacity: 0.6; transform: scaleX(0.9); }
+      50% { opacity: 1; transform: scaleX(1.15); background-color: var(--mint-accent); }
+    }
+
+    @keyframes sigDotSeq {
+      0%, 100% { opacity: 0.3; transform: scale(0.85); background-color: var(--lilac-accent); }
+      35%, 65% { opacity: 1; transform: scale(1.4); background-color: var(--mint-accent); box-shadow: 0 0 8px var(--mint-accent); }
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 100px 0 120px 0;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero-badge-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--badge-purple-bg);
+      border: 1px solid var(--badge-purple-border);
+      color: var(--lilac-accent);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 600;
+      border-radius: 2px;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      line-height: 1.1;
+      margin-bottom: 24px;
+      color: var(--text-main);
+      transition: color 0.3s ease;
+    }
+
+    .hero-title .accent-text {
+      color: var(--mint-accent);
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      margin-bottom: 40px;
+      max-width: 620px;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      padding-top: 30px;
+      border-top: 1px solid var(--border-grid);
+      transition: border-color 0.3s ease;
+    }
+
+    .stat-card {
+      position: relative;
+    }
+
+    .stat-value {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      color: var(--text-main);
+      margin-bottom: 4px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      transition: color 0.3s ease;
+    }
+
+    .hero-visual {
+      position: relative;
+      width: 100%;
+    }
+
+    .hero-animated-visual {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 6 / 5;
+      background: var(--bg-card);
+      border: 1px solid var(--border-grid);
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .baboria-network-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Capability Area Section */
+    .capabilities-section {
+      background: var(--bg-card-subtle);
+      border-top: 1px solid var(--border-grid);
+      border-bottom: 1px solid var(--border-grid);
+      position: relative;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .capabilities-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .capability-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-grid);
+      border-radius: 4px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.35s ease;
+      position: relative;
+      box-shadow: var(--shadow-card);
+    }
+
+    .capability-card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .capability-visual-canvas {
+      width: 100%;
+      height: 200px;
+      background: var(--svg-card-bg);
+      border-bottom: 1px solid var(--border-grid);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .capability-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .capability-card-body {
+      padding: 32px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .capability-header-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .capability-num {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--mint-accent);
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+
+    .capability-status-badge {
+      font-size: 0.7rem;
+      padding: 3px 8px;
+      background: var(--badge-purple-bg);
+      border: 1px solid var(--badge-purple-border);
+      color: var(--lilac-accent);
+      border-radius: 2px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+
+    .capability-card-title {
+      font-size: 1.5rem;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .capability-card-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+    }
+
+    .capability-features {
+      list-style: none;
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-grid);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.3s ease;
+    }
+
+    .capability-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      transition: color 0.3s ease;
+    }
+
+    .capability-feature-bullet {
+      width: 5px;
+      height: 5px;
+      background-color: var(--mint-accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Motion Concept Recommendation Banner */
+    .motion-recommendation-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-grid);
+      border-left: 4px solid var(--mint-accent);
+      padding: 36px;
+      border-radius: 4px;
+      margin-top: 40px;
+      box-shadow: var(--shadow-card);
+      transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    #lang-toggle:checked ~ .page-wrapper .motion-recommendation-box {
+      border-left: 1px solid var(--border-grid);
+      border-right: 4px solid var(--mint-accent);
+    }
+
+    .recommendation-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .recommendation-title {
+      font-size: 1.25rem;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .recommendation-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      transition: color 0.3s ease;
+    }
+
+    /* Capability Motion Animations */
+    /* 1. Telecom Services Motion */
+    .anim-telecom-line {
+      stroke-dasharray: 120;
+      stroke-dashoffset: 120;
+      animation: telecomLineFlow 4s linear infinite;
+    }
+
+    .anim-telecom-pulse {
+      animation: telecomPulse 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .anim-telecom-signal1 { animation: telecomSig1 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-telecom-signal2 { animation: telecomSig2 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite 1.2s; }
+
+    @keyframes telecomLineFlow {
+      0% { stroke-dashoffset: 120; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    @keyframes telecomPulse {
+      0%, 100% { transform: scale(1); opacity: 0.4; }
+      50% { transform: scale(1.3); opacity: 0.9; stroke: var(--mint-accent); }
+    }
+
+    @keyframes telecomSig1 {
+      0% { cx: 60; cy: 100; opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { cx: 240; cy: 100; opacity: 0; }
+    }
+
+    @keyframes telecomSig2 {
+      0% { cx: 240; cy: 100; opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { cx: 60; cy: 100; opacity: 0; }
+    }
+
+    /* 2. AI Automation Motion */
+    .anim-ai-node-pulse {
+      animation: aiNodePulse 4s ease-in-out infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    .anim-ai-data1 { animation: aiData1 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-ai-data2 { animation: aiData2 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 1.5s; }
+
+    @keyframes aiNodePulse {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.2); opacity: 1; stroke: var(--mint-accent); }
+    }
+
+    @keyframes aiData1 {
+      0% { cx: 80; cy: 50; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { cx: 220; cy: 150; opacity: 0; }
+    }
+
+    @keyframes aiData2 {
+      0% { cx: 220; cy: 50; opacity: 0; }
+      20% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { cx: 80; cy: 150; opacity: 0; }
+    }
+
+    /* 3. Commerce & E-Commerce Motion */
+    .anim-commerce-path {
+      stroke-dasharray: 200;
+      stroke-dashoffset: 200;
+      animation: commercePathDraw 4.5s ease-in-out infinite;
+    }
+
+    .anim-commerce-packet1 { animation: commercePacket1 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-commerce-packet2 { animation: commercePacket2 4.5s cubic-bezier(0.4, 0, 0.2, 1) infinite 1.8s; }
+
+    @keyframes commercePathDraw {
+      0% { stroke-dashoffset: 200; }
+      50%, 80% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: -200; }
+    }
+
+    @keyframes commercePacket1 {
+      0% { cx: 50; cy: 100; opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { cx: 150; cy: 50; opacity: 0; }
+    }
+
+    @keyframes commercePacket2 {
+      0% { cx: 150; cy: 50; opacity: 0; }
+      15% { opacity: 1; }
+      85% { opacity: 1; }
+      100% { cx: 250; cy: 100; opacity: 0; }
+    }
+
+    /* 4. Media & Digital Marketing Motion */
+    .anim-media-frame1 { animation: mediaFrameFloat1 5s ease-in-out infinite; }
+    .anim-media-frame2 { animation: mediaFrameFloat2 5s ease-in-out infinite 1s; }
+    .anim-media-wave {
+      animation: mediaWaveExpand 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      transform-box: fill-box;
+      transform-origin: center;
+    }
+
+    @keyframes mediaFrameFloat1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes mediaFrameFloat2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(6px); }
+    }
+
+    @keyframes mediaWaveExpand {
+      0% { transform: scale(0.6); opacity: 0.8; }
+      80%, 100% { transform: scale(1.6); opacity: 0; stroke: var(--mint-accent); }
+    }
+
+    /* Keyframes for Hero Visual */
+    .anim-dash-flow1 { animation: dashFlow 8s linear infinite; }
+    .anim-dash-flow2 { animation: dashFlowReverse 8s linear infinite; }
+    .anim-rotate-slow { animation: geoRotate 40s linear infinite; transform-box: fill-box; transform-origin: center; }
+    .anim-core-group { animation: corePulse 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+
+    .signal-1 { animation: signalMove1 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .signal-2 { animation: signalMove2 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 1s; }
+    .signal-3 { animation: signalMove3 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 2s; }
+    .signal-4 { animation: signalMove4 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 3s; }
+
+    /* Division Signals Motion Behavior */
+    .div1-signal-1 { animation: div1Signal1 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .div1-signal-2 { animation: div1Signal2 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 1s; }
+
+    @keyframes div1Signal1 {
+      0% { cx: 110; cy: 110; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 200; cy: 200; opacity: 0; }
+    }
+    @keyframes div1Signal2 {
+      0% { cx: 290; cy: 110; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 200; cy: 200; opacity: 0; }
+    }
+
+    .div2-signal-1 { animation: div2Signal1 4s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .div2-signal-2 { animation: div2Signal2 4s cubic-bezier(0.4, 0, 0.2, 1) infinite 1s; }
+
+    @keyframes div2Signal1 {
+      0% { cx: 200; cy: 80; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 200; cy: 200; opacity: 0; }
+    }
+    @keyframes div2Signal2 {
+      0% { cx: 320; cy: 200; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 200; cy: 200; opacity: 0; }
+    }
+
+    .anim-node { animation: nodeShift 6s ease-in-out infinite; }
+    .node-1 { animation-delay: 0s; }
+    .node-2 { animation-delay: 1.5s; }
+    .node-3 { animation-delay: 3s; }
+    .node-4 { animation-delay: 4.5s; }
+
+    @keyframes dashFlow {
+      0% { stroke-dashoffset: 160; }
+      100% { stroke-dashoffset: 0; }
+    }
+
+    @keyframes dashFlowReverse {
+      0% { stroke-dashoffset: 0; }
+      100% { stroke-dashoffset: 160; }
+    }
+
+    @keyframes nodeShift {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-4px); }
+    }
+
+    @keyframes corePulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+
+    @keyframes geoRotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes signalMove1 {
+      0% { cx: 130; cy: 110; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 300; cy: 250; opacity: 0; }
+    }
+
+    @keyframes signalMove2 {
+      0% { cx: 470; cy: 110; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 300; cy: 250; opacity: 0; }
+    }
+
+    @keyframes signalMove3 {
+      0% { cx: 470; cy: 390; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 300; cy: 250; opacity: 0; }
+    }
+
+    @keyframes signalMove4 {
+      0% { cx: 130; cy: 390; opacity: 0; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { cx: 300; cy: 250; opacity: 0; }
+    }
+
+    /* Core Values Section */
+    .values-section {
+      position: relative;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .value-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-grid);
+      padding: 40px 32px;
+      position: relative;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-card);
+    }
+
+    .value-card:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .value-num {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      color: var(--lilac-accent);
+      opacity: 0.5;
+      margin-bottom: 20px;
+      display: block;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .value-title {
+      font-size: 1.5rem;
+      color: var(--text-main);
+      margin-bottom: 12px;
+      transition: color 0.3s ease;
+    }
+
+    .value-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      transition: color 0.3s ease;
+    }
+
+    /* Core Values Visual Canvas */
+    .value-card-visual {
+      width: 100%;
+      height: 120px;
+      margin-bottom: 20px;
+      background: var(--svg-card-bg);
+      border: 1px solid var(--border-grid);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .value-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    /* Speed Visual Animation Rules */
+    .anim-speed-dash1 { animation: speedDashFlow 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-speed-dash2 { animation: speedDashFlow 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.4s; }
+    .anim-speed-dot-1 { animation: speedDotProgress1 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-speed-dot-2 { animation: speedDotProgress2 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.35s; }
+    .anim-speed-dot-3 { animation: speedDotProgress3 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.7s; }
+
+    .anim-speed-dest-ring {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: speedDestPulse 3.6s ease-in-out infinite;
+    }
+
+    @keyframes speedDashFlow {
+      0% { stroke-dashoffset: 180; }
+      100% { stroke-dashoffset: -180; }
+    }
+
+    @keyframes speedDotProgress1 {
+      0% { cx: 40px; opacity: 0; }
+      12% { opacity: 1; }
+      72% { cx: 260px; opacity: 1; }
+      82%, 100% { cx: 260px; opacity: 0; }
+    }
+
+    @keyframes speedDotProgress2 {
+      0% { cx: 40px; opacity: 0; }
+      12% { opacity: 1; }
+      72% { cx: 260px; opacity: 1; }
+      82%, 100% { cx: 260px; opacity: 0; }
+    }
+
+    @keyframes speedDotProgress3 {
+      0% { cx: 40px; opacity: 0; }
+      12% { opacity: 1; }
+      72% { cx: 260px; opacity: 1; }
+      82%, 100% { cx: 260px; opacity: 0; }
+    }
+
+    @keyframes speedDestPulse {
+      0%, 65% { transform: scale(0.9); opacity: 0.3; }
+      74%, 82% { transform: scale(1.3); opacity: 0.9; stroke: var(--mint-accent); }
+      92%, 100% { transform: scale(0.9); opacity: 0.3; }
+    }
+
+    /* Precision Visual Animation Rules */
+    .anim-precision-top { transform-box: fill-box; transform-origin: center; animation: precisionAlignTop 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-precision-bottom { transform-box: fill-box; transform-origin: center; animation: precisionAlignBottom 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-precision-left { transform-box: fill-box; transform-origin: center; animation: precisionAlignLeft 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-precision-right { transform-box: fill-box; transform-origin: center; animation: precisionAlignRight 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-precision-pulse { transform-box: fill-box; transform-origin: center; animation: precisionPulseConfirm 3.6s ease-in-out infinite; }
+
+    @keyframes precisionAlignTop {
+      0%, 12% { transform: translateY(-10px); opacity: 0.4; }
+      42%, 78% { transform: translateY(0px); opacity: 1; }
+      90%, 100% { transform: translateY(-10px); opacity: 0.4; }
+    }
+
+    @keyframes precisionAlignBottom {
+      0%, 12% { transform: translateY(10px); opacity: 0.4; }
+      42%, 78% { transform: translateY(0px); opacity: 1; }
+      90%, 100% { transform: translateY(10px); opacity: 0.4; }
+    }
+
+    @keyframes precisionAlignLeft {
+      0%, 12% { transform: translateX(-10px); opacity: 0.4; }
+      42%, 78% { transform: translateX(0px); opacity: 1; }
+      90%, 100% { transform: translateX(-10px); opacity: 0.4; }
+    }
+
+    @keyframes precisionAlignRight {
+      0%, 12% { transform: translateX(10px); opacity: 0.4; }
+      42%, 78% { transform: translateX(0px); opacity: 1; }
+      90%, 100% { transform: translateX(10px); opacity: 0.4; }
+    }
+
+    @keyframes precisionPulseConfirm {
+      0%, 38% { transform: scale(0.8); opacity: 0; }
+      44% { opacity: 1; stroke: var(--mint-accent); }
+      68% { transform: scale(1.5); opacity: 0; stroke: var(--mint-accent); }
+      100% { transform: scale(0.8); opacity: 0; }
+    }
+
+    /* Execution Visual Animation Rules */
+    .anim-execution-path { stroke-dasharray: 250; stroke-dashoffset: 250; animation: executionPathDraw 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+    .anim-exec-node1 { transform-box: fill-box; transform-origin: center; animation: execNodeActivate1 3.6s ease-in-out infinite; }
+    .anim-exec-node2 { transform-box: fill-box; transform-origin: center; animation: execNodeActivate2 3.6s ease-in-out infinite; }
+    .anim-exec-node3 { transform-box: fill-box; transform-origin: center; animation: execNodeActivate3 3.6s ease-in-out infinite; }
+    .anim-exec-node4 { transform-box: fill-box; transform-origin: center; animation: execNodeActivate4 3.6s ease-in-out infinite; }
+    .anim-exec-completion { transform-box: fill-box; transform-origin: center; animation: execCompletionPulse 3.6s ease-in-out infinite; }
+
+    @keyframes executionPathDraw {
+      0% { stroke-dashoffset: 250; }
+      70%, 86% { stroke-dashoffset: 0; }
+      96%, 100% { stroke-dashoffset: 250; }
+    }
+
+    @keyframes execNodeActivate1 {
+      0%, 86% { fill: rgba(5, 150, 105, 0.15); stroke: var(--mint-accent); transform: scale(1); }
+      96%, 100% { fill: var(--bg-card); stroke: var(--text-main); transform: scale(0.9); }
+    }
+
+    @keyframes execNodeActivate2 {
+      0%, 20% { fill: var(--bg-card); stroke: var(--text-main); transform: scale(0.85); opacity: 0.5; }
+      30%, 86% { fill: rgba(126, 34, 206, 0.15); stroke: var(--lilac-accent); transform: scale(1.1); opacity: 1; }
+      96%, 100% { fill: var(--bg-card); stroke: var(--text-main); transform: scale(0.85); opacity: 0.5; }
+    }
+
+    @keyframes execNodeActivate3 {
+      0%, 50% { fill: var(--bg-card); stroke: var(--text-main); transform: scale(0.85); opacity: 0.5; }
+      60%, 86% { fill: rgba(5, 150, 105, 0.15); stroke: var(--mint-accent); transform: scale(1.1); opacity: 1; }
+      96%, 100% { fill: var(--bg-card); stroke: var(--text-main); transform: scale(0.85); opacity: 0.5; }
+    }
+
+    @keyframes execNodeActivate4 {
+      0%, 68% { fill: var(--bg-card); stroke: var(--text-main); transform: scale(0.85); opacity: 0.5; }
+      76%, 86% { fill: var(--mint-accent); stroke: var(--mint-accent); transform: scale(1.2); opacity: 1; }
+      96%, 100% { fill: var(--bg-card); stroke: var(--text-main); transform: scale(0.85); opacity: 0.5; }
+    }
+
+    @keyframes execCompletionPulse {
+      0%, 70% { transform: scale(0.8); opacity: 0; }
+      78% { transform: scale(1.4); opacity: 0.8; stroke: var(--mint-accent); }
+      88%, 100% { transform: scale(1.8); opacity: 0; }
+    }
+
+    /* Divisions Section */
+    .solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .solution-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-grid);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+      position: relative;
+      box-shadow: var(--shadow-card);
+    }
+
+    .solution-card:hover {
+      border-color: rgba(126, 34, 206, 0.4);
+      box-shadow: var(--shadow-card-hover);
+      transform: translateY(-4px);
+    }
+
+    .solution-image-container {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      background-color: var(--svg-card-bg);
+      border-bottom: 1px solid var(--border-grid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .solution-svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .solution-card:hover .solution-svg {
+      transform: scale(1.02);
+    }
+
+    .solution-body {
+      padding: 32px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .solution-tag {
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--mint-accent);
+      margin-bottom: 12px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .solution-title {
+      font-size: 1.5rem;
+      color: var(--text-main);
+      margin-bottom: 10px;
+      transition: color 0.3s ease;
+    }
+
+    .solution-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      transition: color 0.3s ease;
+    }
+
+    /* Division Capabilities List */
+    .capability-list {
+      list-style: none;
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-grid);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color 0.3s ease;
+    }
+
+    .capability-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--text-main);
+      line-height: 1.4;
+      transition: color 0.3s ease;
+    }
+
+    .capability-bullet {
+      width: 6px;
+      height: 6px;
+      background-color: var(--mint-accent);
+      display: inline-block;
+      margin-top: 6px;
+      flex-shrink: 0;
+      transition: background-color 0.3s ease;
+    }
+
+    .capability-note {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      transition: color 0.3s ease;
+    }
+
+    /* Structure Section */
+    .pillars-section {
+      position: relative;
+      border-top: 1px solid var(--border-grid);
+      transition: border-color 0.3s ease;
+    }
+
+    .pillars-backdrop {
+      padding: 80px 0;
+      position: relative;
+      overflow: hidden;
+      background-color: var(--bg-canvas);
+      transition: background-color 0.3s ease;
+    }
+
+    .pillars-bg-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .pillars-backdrop .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Loading Sequence Animations */
+    .baboria-loading-dot {
+      fill: var(--lilac-accent);
+      opacity: 0.3;
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: baboriaDotSequence 2.1s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+
+    .dot-seq-1 { animation-delay: 0s; }
+    .dot-seq-2 { animation-delay: 0.35s; }
+    .dot-seq-3 { animation-delay: 0.7s; }
+
+    @keyframes baboriaDotSequence {
+      0%, 100% {
+        opacity: 0.25;
+        fill: var(--lilac-accent);
+        transform: scale(0.85);
+      }
+      30%, 55% {
+        opacity: 1;
+        fill: var(--mint-accent);
+        transform: scale(1.3);
+      }
+    }
+
+    /* Pillar Cards */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+
+    .pillar-item {
+      background: var(--bg-card);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-grid);
+      padding: 36px;
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      transition: all 0.3s ease;
+      box-shadow: var(--shadow-card);
+    }
+
+    .pillar-item:hover {
+      border-color: var(--border-highlight);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .pillar-icon-box {
+      width: 48px;
+      height: 48px;
+      background: var(--purple-deep);
+      border: 1px solid var(--lilac-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #ffffff;
+      font-family: var(--font-heading);
+      font-weight: bold;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .pillar-content h3 {
+      font-size: 1.25rem;
+      margin-bottom: 8px;
+      color: var(--text-main);
+      transition: color 0.3s ease;
+    }
+
+    .pillar-content p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      transition: color 0.3s ease;
+    }
+
+    /* Positioning Info Banner */
+    .positioning-strip {
+      background: var(--strip-bg);
+      padding: 60px 0;
+      border-top: 1px solid var(--border-grid);
+      border-bottom: 1px solid var(--border-grid);
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .strip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    .strip-item h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--strip-muted);
+      margin-bottom: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .strip-item p {
+      font-size: 1.1rem;
+      font-family: var(--font-heading);
+      color: var(--strip-text);
+      transition: color 0.3s ease;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--footer-bg);
+      border-top: 1px solid var(--border-grid);
+      padding: 80px 0 40px 0;
+      transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 60px;
+      margin-bottom: 60px;
+    }
+
+    .footer-logo {
+      height: 36px;
+      width: auto;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    .footer-about {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 400px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-address {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-heading {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-main);
+      margin-bottom: 20px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      transition: color 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .footer-links a:hover {
+      color: var(--mint-accent);
+    }
+
+    .footer-bottom {
+      padding-top: 40px;
+      border-top: 1px solid var(--border-grid);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      transition: border-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Reduced Motion */
+    @media (prefers-reduced-motion: reduce) {
+      .anim-dash-flow1, .anim-dash-flow2, .anim-rotate-slow, .anim-core-group,
+      .signal-1, .signal-2, .signal-3, .signal-4, .anim-node,
+      .div1-signal-1, .div1-signal-2, .div2-signal-1, .div2-signal-2,
+      .baboria-loading-dot, .anim-speed-dash1, .anim-speed-dash2,
+      .anim-speed-dot-1, .anim-speed-dot-2, .anim-speed-dot-3, .anim-speed-dest-ring,
+      .anim-precision-top, .anim-precision-bottom, .anim-precision-left, .anim-precision-right,
+      .anim-precision-pulse, .anim-execution-path,
+      .anim-exec-node1, .anim-exec-node2, .anim-exec-node3, .anim-exec-node4,
+      .anim-exec-completion, .signature-dash, .signature-dot,
+      .anim-telecom-line, .anim-telecom-pulse, .anim-telecom-signal1, .anim-telecom-signal2,
+      .anim-ai-node-pulse, .anim-ai-data1, .anim-ai-data2,
+      .anim-commerce-path, .anim-commerce-packet1, .anim-commerce-packet2,
+      .anim-media-frame1, .anim-media-frame2, .anim-media-wave {
+        animation: none !important;
+        stroke-dashoffset: 0 !important;
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .baboria-loading-dot {
+        fill: var(--mint-accent) !important;
+        transform: scale(1) !important;
+      }
+      .anim-speed-dot-1 { cx: 90px !important; }
+      .anim-speed-dot-2 { cx: 160px !important; }
+      .anim-speed-dot-3 { cx: 230px !important; }
+      .signal-1, .signal-2, .signal-3, .signal-4,
+      .div1-signal-1, .div1-signal-2, .div2-signal-1, .div2-signal-2 {
+        display: none !important;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .capabilities-grid,
+      .values-grid,
+      .solutions-grid,
+      .recommendation-grid {
+        grid-template-columns: 1fr;
+      }
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+      .strip-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+      }
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      nav.nav-menu {
+        display: none;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .strip-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+      }
+      .header-actions {
+        gap: 8px;
+      }
+      .control-btn {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+      }
+      .cta-placeholder-btn {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+      }
+      .header-signature {
+        display: none;
+      }
+    }
+    /* Wordmark lockup (BBR-GDL-001: mark before wordmark, Montserrat Light, 0.3em tracking) */
+    .brand-lockup { display: inline-flex; align-items: center; gap: 12px; direction: ltr; color: var(--text-main); line-height: 1; }
+    .brand-mark { height: 10px; width: auto; display: block; }
+    .brand-word { font-family: 'Montserrat', 'Reddit Sans', sans-serif; font-weight: 300; letter-spacing: 0.3em; font-size: 1.2rem; text-transform: uppercase; }
+    .footer-lockup { margin-bottom: 20px; }
+
+    /* Fix: theme x language label matrix (source showed EN + AR labels together) */
+    html body #theme-toggle ~ .page-wrapper .theme-btn .theme-label-dark,
+    html body #theme-toggle ~ .page-wrapper .theme-btn .theme-label-light { display: none !important; }
+    html:not(:has(#theme-toggle:checked)):not(:has(#lang-toggle:checked)) body #theme-toggle ~ .page-wrapper .theme-btn .theme-label-dark.lang-en,
+    html:has(#theme-toggle:checked):not(:has(#lang-toggle:checked)) body #theme-toggle ~ .page-wrapper .theme-btn .theme-label-light.lang-en,
+    html:not(:has(#theme-toggle:checked)):has(#lang-toggle:checked) body #theme-toggle ~ .page-wrapper .theme-btn .theme-label-dark.lang-ar,
+    html:has(#theme-toggle:checked):has(#lang-toggle:checked) body #theme-toggle ~ .page-wrapper .theme-btn .theme-label-light.lang-ar { display: inline-block !important; }
+
+    /* Fix: header controls must not overflow between 577px and 1100px */
+    .cta-placeholder-btn { white-space: nowrap; }
+
+    /* Fix: in-page anchors landed underneath the sticky header */
+    section[id] { scroll-margin-top: 88px; }
+    @media (max-width: 1100px) { .header-signature { display: none; } }
+  </style>
+</head>
+<body>
+
+  <!-- Pure CSS Independent Stateful Inputs for Theme & Language -->
+  <input type="checkbox" id="theme-toggle" class="toggle-checkbox" hidden="" aria-label="Toggle Dark / Light Mode">
+  <input type="checkbox" id="lang-toggle" class="toggle-checkbox" hidden="" aria-label="Toggle Arabic Language">
+
+  <div class="page-wrapper">
+    <!-- Header Navigation -->
+    <header>
+      <div class="container header-inner">
+        <a href="#overview" class="brand-logo-wrap" aria-label="Baboria Home">
+          <span class="brand-lockup header-lockup" role="img" aria-label="Baboria"><svg class="brand-mark" viewBox="0 0 750 100" aria-hidden="true" focusable="false"><rect x="0" y="0" width="300" height="100" fill="#EC3013"/><rect x="350" y="0" width="100" height="100" fill="currentColor"/><rect x="500" y="0" width="100" height="100" fill="currentColor"/><rect x="650" y="0" width="100" height="100" fill="currentColor"/></svg><span class="brand-word">BABORIA</span></span>
+          
+          <!-- Header BABORIA Signature Motion Widget -->
+          <div class="header-signature" title="BABORIA Parent System Active">
+            <div class="signature-motion-container" aria-hidden="true">
+              <span class="signature-dash"></span>
+              <span class="signature-dot sig-dot-1"></span>
+              <span class="signature-dot sig-dot-2"></span>
+              <span class="signature-dot sig-dot-3"></span>
+            </div>
+            <span class="lang-en">SYSTEM ACTIVE</span>
+            <span class="lang-ar">النظام نشط</span>
+          </div>
+        </a>
+
+        <nav class="nav-menu" aria-label="Main Navigation">
+          <a href="#overview" class="nav-link">
+            <span class="lang-en">Overview</span>
+            <span class="lang-ar">نظرة عامة</span>
+          </a>
+          <a href="#capabilities" class="nav-link">
+            <span class="lang-en">Capabilities</span>
+            <span class="lang-ar">القدرات</span>
+          </a>
+          <a href="#values" class="nav-link">
+            <span class="lang-en">Core Values</span>
+            <span class="lang-ar">القيم الأساسية</span>
+          </a>
+          <a href="#divisions" class="nav-link">
+            <span class="lang-en">Divisions</span>
+            <span class="lang-ar">القطاعات</span>
+          </a>
+          <a href="#structure" class="nav-link">
+            <span class="lang-en">Structure</span>
+            <span class="lang-ar">الهيكل المؤسسي</span>
+          </a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="header-controls">
+            <!-- Theme Switcher -->
+            <label for="theme-toggle" class="control-btn theme-btn" title="Toggle Light / Dark Theme" aria-label="Toggle Dark/Light Mode">
+              <i class="fas fa-moon theme-icon-moon"></i>
+              <i class="fas fa-sun theme-icon-sun"></i>
+              <span class="theme-label-dark lang-en">Dark</span>
+              <span class="theme-label-light lang-en">Light</span>
+              <span class="theme-label-dark lang-ar">داكن</span>
+              <span class="theme-label-light lang-ar">فاتح</span>
+            </label>
+
+            <!-- Language Switcher -->
+            <label for="lang-toggle" class="control-btn lang-btn" title="Switch English / Arabic" aria-label="Switch Language">
+              <i class="fas fa-globe"></i>
+              <span class="lang-en">AR</span>
+              <span class="lang-ar">EN</span>
+            </label>
+          </div>
+
+          <!-- Mandatory Single CTA Placeholder -->
+          <a href="mailto:info@baboria.com" class="cta-placeholder-btn"><span class="lang-en">Contact us</span><span class="lang-ar">تواصل معنا</span></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section (#overview) -->
+    <section id="overview" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span class="hero-badge">
+              <span class="lang-en"> Technology Enabler</span>
+              <span class="lang-ar">ممكّن تكنولوجي</span>
+            </span>
+
+            <!-- BABORIA Signature Motion Badge -->
+            <div class="signature-motion-container" aria-label="BABORIA Signature System Motion">
+              <span class="signature-dash"></span>
+              <span class="signature-dot sig-dot-1"></span>
+              <span class="signature-dot sig-dot-2"></span>
+              <span class="signature-dot sig-dot-3"></span>
+            </div>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="lang-en">
+              Technology that enables.
+              <span class="accent-text">Solutions that move business forward.</span>
+            </span>
+            <span class="lang-ar">
+              تكنولوجيا تمكّن.
+              <span class="accent-text">حلول تدفع الأعمال إلى الأمام.</span>
+            </span>
+          </h1>
+          <p class="hero-description">
+            <span class="lang-en">BABORIA empowers businesses by integrating smart AI automation, telecom services, FMCG supply chains, and digital media.</span>
+            <span class="lang-ar">تمكّن BABORIA الشركات من خلال دمج الأتمتة الذكية بالذكاء الاصطناعي، وخدمات الاتصالات، وسلاسل إمداد السلع الاستهلاكية، والإعلام الرقمي.</span>
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="lang-en">3 Core Divisions</span>
+                <span class="lang-ar">3 قطاعات رئيسية</span>
+              </div>
+              <div class="stat-label">
+                <span class="lang-en">Unified Operating Framework</span>
+                <span class="lang-ar">إطار تشغيلي موحد</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">
+                <span class="lang-en">Parent Technology</span>
+                <span class="lang-ar">تكنولوجيا الشركة الأم</span>
+              </div>
+              <div class="stat-label">
+                <span class="lang-en">Selective Market Focus</span>
+                <span class="lang-ar">تركيز سوقي مُنتقى</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated BABORIA Capability Integration Visual -->
+        <div class="hero-visual">
+          <div class="hero-animated-visual" aria-label="BABORIA Capability Integration Network Visual">
+            <svg class="baboria-network-svg" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive 2D line art illustrating BABORIA integrating business capabilities">
+              <!-- Background Architectural Grid -->
+              <rect width="600" height="500" fill="var(--svg-bg)"></rect>
+              <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                <line x1="50" y1="250" x2="550" y2="250"></line>
+                <line x1="300" y1="50" x2="300" y2="450"></line>
+                <circle cx="300" cy="250" r="180"></circle>
+                <circle cx="300" cy="250" r="120"></circle>
+                <circle cx="300" cy="250" r="60"></circle>
+                <line x1="130" y1="50" x2="130" y2="450"></line>
+                <line x1="470" y1="50" x2="470" y2="450"></line>
+                <line x1="50" y1="110" x2="550" y2="110"></line>
+                <line x1="50" y1="390" x2="550" y2="390"></line>
+              </g>
+
+              <!-- Technical Corner Alignment Markers -->
+              <g stroke="var(--lilac-accent)" stroke-opacity="0.5" stroke-width="1.5">
+                <path d="M 30 40 L 30 30 L 40 30"></path>
+                <path d="M 570 40 L 570 30 L 560 30"></path>
+                <path d="M 30 460 L 30 470 L 40 470"></path>
+                <path d="M 570 460 L 570 470 L 560 470"></path>
+              </g>
+
+              <!-- Outer Diamond Alignment Frame -->
+              <polygon points="300,70 510,250 300,430 90,250" stroke="var(--lilac-accent)" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="6 6" fill="none"></polygon>
+
+              <!-- Integration Vector Lines -->
+              <line x1="130" y1="110" x2="300" y2="250" stroke="var(--mint-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow1"></line>
+              <line x1="470" y1="110" x2="300" y2="250" stroke="var(--lilac-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow2"></line>
+              <line x1="470" y1="390" x2="300" y2="250" stroke="var(--mint-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow1"></line>
+              <line x1="130" y1="390" x2="300" y2="250" stroke="var(--lilac-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow2"></line>
+
+              <!-- Moving Integration Signals -->
+              <circle class="signal-1" cx="130" cy="110" r="4.5" fill="var(--mint-accent)"></circle>
+              <circle class="signal-2" cx="470" cy="110" r="4.5" fill="var(--lilac-accent)"></circle>
+              <circle class="signal-3" cx="470" cy="390" r="4.5" fill="var(--mint-accent)"></circle>
+              <circle class="signal-4" cx="130" cy="390" r="4.5" fill="var(--lilac-accent)"></circle>
+
+              <!-- Central Core Engine Node -->
+              <g class="anim-core-group">
+                <circle cx="300" cy="250" r="54" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="3 3" class="anim-rotate-slow" fill="none"></circle>
+                <circle cx="300" cy="250" r="44" fill="var(--svg-node-fill)" stroke="var(--svg-node-border)" stroke-width="2"></circle>
+                
+                <polygon points="300,218 328,234 328,266 300,282 272,266 272,234" fill="var(--badge-purple-bg)" stroke="var(--lilac-accent)" stroke-width="1.5"></polygon>
+                <polygon points="300,226 321,238 321,262 300,274 279,262 279,238" fill="rgba(5, 150, 105, 0.15)" stroke="var(--mint-accent)" stroke-width="1.5"></polygon>
+                
+                <circle cx="300" cy="250" r="8" fill="var(--lilac-accent)"></circle>
+                <circle cx="300" cy="250" r="4" fill="var(--mint-accent)"></circle>
+
+                <text x="300" y="318" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="10" font-weight="700" fill="var(--text-main)" text-anchor="middle" letter-spacing="1.5" class="lang-en">INTEGRATED SYSTEM</text>
+                <text x="300" y="318" font-family="'Tajawal', sans-serif" font-size="11" font-weight="700" fill="var(--text-main)" text-anchor="middle" class="lang-ar">نظام متكامل</text>
+              </g>
+
+              <!-- Capability Nodes -->
+              <g class="anim-node node-1">
+                <circle cx="130" cy="110" r="22" fill="var(--svg-node-fill)" stroke="var(--svg-node-border)" stroke-width="2"></circle>
+                <circle cx="130" cy="110" r="12" fill="rgba(5, 150, 105, 0.15)" stroke="var(--mint-accent)" stroke-width="1.5"></circle>
+                <circle cx="130" cy="110" r="4" fill="var(--mint-accent)"></circle>
+                <rect x="55" y="62" width="150" height="22" rx="3" fill="var(--bg-card)" stroke="var(--border-grid)" stroke-width="1"></rect>
+                <text x="130" y="77" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="9" font-weight="600" fill="var(--mint-accent)" text-anchor="middle" letter-spacing="0.5" class="lang-en">AI AUTOMATION</text>
+                <text x="130" y="77" font-family="'Tajawal', sans-serif" font-size="9" font-weight="700" fill="var(--mint-accent)" text-anchor="middle" class="lang-ar">أتمتة الذكاء الاصطناعي</text>
+              </g>
+
+              <g class="anim-node node-2">
+                <circle cx="470" cy="110" r="22" fill="var(--svg-node-fill)" stroke="var(--svg-node-border)" stroke-width="2"></circle>
+                <circle cx="470" cy="110" r="12" fill="var(--badge-purple-bg)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                <circle cx="470" cy="110" r="4" fill="var(--lilac-accent)"></circle>
+                <rect x="395" y="62" width="150" height="22" rx="3" fill="var(--bg-card)" stroke="var(--border-grid)" stroke-width="1"></rect>
+                <text x="470" y="77" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="9" font-weight="600" fill="var(--lilac-accent)" text-anchor="middle" letter-spacing="0.5" class="lang-en">TELECOM SERVICES</text>
+                <text x="470" y="77" font-family="'Tajawal', sans-serif" font-size="9" font-weight="700" fill="var(--lilac-accent)" text-anchor="middle" class="lang-ar">خدمات الاتصالات</text>
+              </g>
+
+              <g class="anim-node node-3">
+                <circle cx="470" cy="390" r="22" fill="var(--svg-node-fill)" stroke="var(--svg-node-border)" stroke-width="2"></circle>
+                <circle cx="470" cy="390" r="12" fill="rgba(5, 150, 105, 0.15)" stroke="var(--mint-accent)" stroke-width="1.5"></circle>
+                <circle cx="470" cy="390" r="4" fill="var(--mint-accent)"></circle>
+                <rect x="395" y="424" width="150" height="22" rx="3" fill="var(--bg-card)" stroke="var(--border-grid)" stroke-width="1"></rect>
+                <text x="470" y="439" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="9" font-weight="600" fill="var(--mint-accent)" text-anchor="middle" letter-spacing="0.5" class="lang-en">COMMERCE &amp; TRADE</text>
+                <text x="470" y="439" font-family="'Tajawal', sans-serif" font-size="9" font-weight="700" fill="var(--mint-accent)" text-anchor="middle" class="lang-ar">التجارة والتوزيع</text>
+              </g>
+
+              <g class="anim-node node-4">
+                <circle cx="130" cy="390" r="22" fill="var(--svg-node-fill)" stroke="var(--svg-node-border)" stroke-width="2"></circle>
+                <circle cx="130" cy="390" r="12" fill="var(--badge-purple-bg)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                <circle cx="130" cy="390" r="4" fill="var(--lilac-accent)"></circle>
+                <rect x="55" y="424" width="150" height="22" rx="3" fill="var(--bg-card)" stroke="var(--border-grid)" stroke-width="1"></rect>
+                <text x="130" y="439" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="9" font-weight="600" fill="var(--lilac-accent)" text-anchor="middle" letter-spacing="0.5" class="lang-en">MEDIA &amp; DIGITAL</text>
+                <text x="130" y="439" font-family="'Tajawal', sans-serif" font-size="9" font-weight="700" fill="var(--lilac-accent)" text-anchor="middle" class="lang-ar">الإعلام والتسويق</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Four Core Capability Areas Section (#capabilities) -->
+    <section id="capabilities" class="capabilities-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="lang-en">Four Core Capability Areas</span>
+            <span class="lang-ar">مجالات القدرات الأربعة الأساسية</span>
+          </h2>
+        </div>
+
+        <div class="capabilities-grid">
+          <!-- Area 1: Telecom Services -->
+          <article class="capability-card">
+            <div class="capability-visual-canvas" aria-label="Telecom Services Motion Backdrop">
+              <svg class="capability-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Telecom Services signal lines and connected nodes motion concept">
+                <rect width="300" height="200" fill="var(--svg-card-bg)"></rect>
+                <!-- Grid background -->
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="30" y1="100" x2="270" y2="100"></line>
+                  <line x1="150" y1="20" x2="150" y2="180"></line>
+                  <circle cx="150" cy="100" r="60"></circle>
+                </g>
+
+                <!-- Signal Arcs & Lines -->
+                <path d="M 60 100 Q 150 40 240 100" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.4"></path>
+                <path d="M 60 100 Q 150 160 240 100" stroke="var(--mint-accent)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.4"></path>
+                
+                <line x1="60" y1="100" x2="240" y2="100" stroke="var(--mint-accent)" stroke-width="2" class="anim-telecom-line" fill="none"></line>
+
+                <!-- Nodes -->
+                <circle cx="60" cy="100" r="14" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                <circle cx="60" cy="100" r="6" fill="var(--lilac-accent)"></circle>
+
+                <circle cx="150" cy="100" r="22" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="2" class="anim-telecom-pulse"></circle>
+                <circle cx="150" cy="100" r="8" fill="var(--mint-accent)"></circle>
+
+                <circle cx="240" cy="100" r="14" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                <circle cx="240" cy="100" r="6" fill="var(--lilac-accent)"></circle>
+
+                <!-- Flowing Signals -->
+                <circle class="anim-telecom-signal1" cx="60" cy="100" r="4" fill="var(--mint-accent)"></circle>
+                <circle class="anim-telecom-signal2" cx="240" cy="100" r="4" fill="var(--lilac-accent)"></circle>
+
+                <!-- BABORIA Signature Motion Overlay -->
+                <g transform="translate(115, 165)">
+                  <line x1="0" y1="0" x2="18" y2="0" stroke="var(--lilac-accent)" stroke-width="3" stroke-linecap="round"></line>
+                  <circle cx="28" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="38" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="48" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="capability-card-body">
+              <div class="capability-header-meta">
+                <span class="capability-num">Capability 01</span>
+              </div>
+              <h3 class="capability-card-title">
+                <span class="lang-en">Telecom Services</span>
+                <span class="lang-ar">خدمات الاتصالات</span>
+              </h3>
+              <p class="capability-card-desc">
+                <span class="lang-en">Direct Carrier Billing (DCB), connectivity infrastructure, and signal routes that transform phone numbers into reliable payment pathways.</span>
+                <span class="lang-ar">التحصيل المباشر عبر شبكات الاتصالات (DCB) والبنية التحتية للربط التي تحول رقم الهاتف إلى مسار دفع موثوق.</span>
+              </p>
+              <ul class="capability-features">
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">Direct Carrier Billing (DCB) Integration</span>
+                  <span class="lang-ar">التكامل مع تحصيل شبكات الاتصالات (DCB)</span>
+                </li>
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">High-Throughput SMS &amp; USSD Gateways</span>
+                  <span class="lang-ar">بوابات الرسائل القصيرة وUSSD عالية السعة</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Area 2: AI Automation -->
+          <article class="capability-card">
+            <div class="capability-visual-canvas" aria-label="AI Automation Motion Backdrop">
+              <svg class="capability-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AI Automation processing indicators and data point network">
+                <rect width="300" height="200" fill="var(--svg-card-bg)"></rect>
+                <!-- Grid background -->
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="80" y1="50" x2="220" y2="150"></line>
+                  <line x1="220" y1="50" x2="80" y2="150"></line>
+                  <line x1="150" y1="30" x2="150" y2="170"></line>
+                </g>
+
+                <!-- Processing Network Lattice -->
+                <polygon points="150,40 220,100 150,160 80,100" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="4 4" fill="none" opacity="0.4"></polygon>
+                <polygon points="150,65 190,100 150,135 110,100" stroke="var(--mint-accent)" stroke-width="1.5" fill="none" class="anim-ai-node-pulse"></polygon>
+
+                <!-- Nodes -->
+                <circle cx="80" cy="50" r="8" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                <circle cx="220" cy="50" r="8" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                <circle cx="220" cy="150" r="8" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="1.5"></circle>
+                <circle cx="80" cy="150" r="8" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="1.5"></circle>
+
+                <circle cx="150" cy="100" r="14" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="2"></circle>
+                <circle cx="150" cy="100" r="6" fill="var(--lilac-accent)"></circle>
+
+                <!-- Flowing Data Points -->
+                <circle class="anim-ai-data1" cx="80" cy="50" r="3.5" fill="var(--mint-accent)"></circle>
+                <circle class="anim-ai-data2" cx="220" cy="50" r="3.5" fill="var(--lilac-accent)"></circle>
+
+                <!-- BABORIA Signature Motion Overlay -->
+                <g transform="translate(115, 172)">
+                  <line x1="0" y1="0" x2="18" y2="0" stroke="var(--lilac-accent)" stroke-width="3" stroke-linecap="round"></line>
+                  <circle cx="28" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="38" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="48" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="capability-card-body">
+              <div class="capability-header-meta">
+                <span class="capability-num">Capability 02</span>
+              </div>
+              <h3 class="capability-card-title">
+                <span class="lang-en">AI Autocxvbmation</span>
+                <span class="lang-ar">أتمتة الذكاء الاصطناعي</span>
+              </h3>
+              <p class="capability-card-desc">
+                <span class="lang-en">Intelligent workforce automation (AI MASTER) with autonomous agent workflows that streamline high-frequency operational tasks.</span>
+                <span class="lang-ar">أتمتة القوى العاملة بالذكاء الاصطناعي (منصة AI MASTER) عبر وكلاء ذكيين ينسقون المهام عالية التكرار.</span>
+              </p>
+              <ul class="capability-features">
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">AI MASTER Agent Processing Engine</span>
+                  <span class="lang-ar">محرك معالجة وكلاء AI MASTER</span>
+                </li>
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">Automated Repetitive Task Offloading</span>
+                  <span class="lang-ar">إلغاء أعباء المهام المتكررة تلقائياً</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Area 3: Commerce & E-Commerce -->
+          <article class="capability-card">
+            <div class="capability-visual-canvas" aria-label="Commerce and E-Commerce Motion Backdrop">
+              <svg class="capability-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Commerce minimal paths representing distribution and movement between nodes">
+                <rect width="300" height="200" fill="var(--svg-card-bg)"></rect>
+                <!-- Grid background -->
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="30" y1="60" x2="270" y2="60"></line>
+                  <line x1="30" y1="140" x2="270" y2="140"></line>
+                  <line x1="150" y1="20" x2="150" y2="180"></line>
+                </g>
+
+                <!-- Vector Supply Routes -->
+                <path d="M 50 100 L 150 50 L 250 100 L 150 150 Z" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.4"></path>
+                <path d="M 50 100 L 150 50 L 250 100" stroke="var(--mint-accent)" stroke-width="2" fill="none" class="anim-commerce-path"></path>
+
+                <!-- Nodes -->
+                <circle cx="50" cy="100" r="12" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                <rect x="45" y="95" width="10" height="10" fill="var(--lilac-accent)"></rect>
+
+                <circle cx="150" cy="50" r="14" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="2"></circle>
+                <circle cx="150" cy="50" r="5" fill="var(--mint-accent)"></circle>
+
+                <circle cx="250" cy="100" r="12" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                <rect x="245" y="95" width="10" height="10" fill="var(--mint-accent)"></rect>
+
+                <!-- Value Movement Packets -->
+                <circle class="anim-commerce-packet1" cx="50" cy="100" r="4" fill="var(--mint-accent)"></circle>
+                <circle class="anim-commerce-packet2" cx="150" cy="50" r="4" fill="var(--lilac-accent)"></circle>
+
+                <!-- BABORIA Signature Motion Overlay -->
+                <g transform="translate(115, 170)">
+                  <line x1="0" y1="0" x2="18" y2="0" stroke="var(--lilac-accent)" stroke-width="3" stroke-linecap="round"></line>
+                  <circle cx="28" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="38" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="48" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="capability-card-body">
+              <div class="capability-header-meta">
+                <span class="capability-num">Capability 03</span>
+              </div>
+              <h3 class="capability-card-title">
+                <span class="lang-en">Commerce &amp; E-Commerce</span>
+                <span class="lang-ar">التجارة والتجارة الإلكترونية</span>
+              </h3>
+              <p class="capability-card-desc">
+                <span class="lang-en">Supply chain integration, B2B wholesale distribution, and commerce networks powered by NORTH X and the RIKAZ ecosystem.</span>
+                <span class="lang-ar">تكامل سلاسل الإمداد وتوزيع الجملة بين الشركات وشبكات التجارة المدعومة بـ NORTH X ومنظومة RIKAZ.</span>
+              </p>
+              <ul class="capability-features">
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">FMCG Supply Chain (RIKAZ Platform)</span>
+                  <span class="lang-ar">سلاسل إمداد السلع الاستهلاكية (تطبيق RIKAZ)</span>
+                </li>
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">Cross-Border B2B Distribution Pathways</span>
+                  <span class="lang-ar">مسارات التوزيع بين الشركات عبر الحدود</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Area 4: Media & Digital Marketing -->
+          <article class="capability-card">
+            <div class="capability-visual-canvas" aria-label="Media and Digital Marketing Motion Backdrop">
+              <svg class="capability-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Media digital frames and connected publishing nodes">
+                <rect width="300" height="200" fill="var(--svg-card-bg)"></rect>
+                <!-- Grid background -->
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="20" y1="100" x2="280" y2="100"></line>
+                  <circle cx="150" cy="100" r="70"></circle>
+                </g>
+
+                <!-- Content Frames & Signal Arcs -->
+                <rect class="anim-media-frame1" x="50" y="55" width="70" height="90" rx="4" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.5"></rect>
+                <rect class="anim-media-frame2" x="180" y="55" width="70" height="90" rx="4" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="1.5"></rect>
+
+                <circle cx="150" cy="100" r="16" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="2"></circle>
+                <circle cx="150" cy="100" r="28" fill="none" stroke="var(--mint-accent)" stroke-width="1.5" class="anim-media-wave"></circle>
+                <polygon points="146,93 158,100 146,107" fill="var(--lilac-accent)"></polygon>
+
+                <!-- Connecting Rays -->
+                <line x1="120" y1="100" x2="134" y2="100" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="2 2"></line>
+                <line x1="166" y1="100" x2="180" y2="100" stroke="var(--mint-accent)" stroke-width="1.5" stroke-dasharray="2 2"></line>
+
+                <!-- BABORIA Signature Motion Overlay -->
+                <g transform="translate(115, 172)">
+                  <line x1="0" y1="0" x2="18" y2="0" stroke="var(--lilac-accent)" stroke-width="3" stroke-linecap="round"></line>
+                  <circle cx="28" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="38" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                  <circle cx="48" cy="0" r="2.5" fill="var(--mint-accent)"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="capability-card-body">
+              <div class="capability-header-meta">
+                <span class="capability-num">Capability 04</span>
+              </div>
+              <h3 class="capability-card-title">
+                <span class="lang-en">Media &amp; Digital Marketing</span>
+                <span class="lang-ar">الإعلام والتسويق الرقمي</span>
+              </h3>
+              <p class="capability-card-desc">
+                <span class="lang-en">Digital media management, content frame distribution, and software solutions powered by the ROOTA division.</span>
+                <span class="lang-ar">إدارة الإعلام الرقمي وتوزيع المحتوى والحلول البرمجية عبر قطاع ROOTA.</span>
+              </p>
+              <ul class="capability-features">
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">ROOTA Custom Software &amp; Content Design</span>
+                  <span class="lang-ar">تطوير البرمجيات وتصميم المحتوى عبر ROOTA</span>
+                </li>
+                <li class="capability-feature-item">
+                  <span class="capability-feature-bullet"></span>
+                  <span class="lang-en">Multi-Node Digital Publishing Pathways</span>
+                  <span class="lang-ar">مسارات النشر الرقمي عبر النقاط المتعددة</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Core Values Section (#values) -->
+    <section id="values" class="values-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span class="lang-en">Operating Principles</span>
+            <span class="lang-ar">مبادئ التشغيل</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-en">Core Values</span>
+            <span class="lang-ar">القيم الأساسية</span>
+          </h2>
+          <p class="section-subtitle">
+            <span class="lang-en">Engineered for architectural rigor, speed, and reliable execution.</span>
+            <span class="lang-ar">مصممة بدقة هندسية، وسرعة، وتنفيذ موثوق.</span>
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <!-- Value 01 — Speed -->
+          <div class="value-card">
+            <div class="value-card-visual" aria-label="Speed motion illustration">
+              <svg class="value-svg" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Accelerating flow lines and sequential progress dots">
+                <rect width="300" height="120" fill="var(--svg-card-bg)"></rect>
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="20" y1="35" x2="280" y2="35"></line>
+                  <line x1="20" y1="60" x2="280" y2="60"></line>
+                  <line x1="20" y1="85" x2="280" y2="85"></line>
+                  <line x1="40" y1="15" x2="40" y2="105"></line>
+                  <line x1="150" y1="15" x2="150" y2="105"></line>
+                  <line x1="260" y1="15" x2="260" y2="105"></line>
+                </g>
+
+                <line x1="40" y1="35" x2="260" y2="35" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="12 12" opacity="0.35"></line>
+                <line x1="40" y1="35" x2="260" y2="35" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="30 150" class="anim-speed-dash1"></line>
+
+                <line x1="40" y1="60" x2="260" y2="60" stroke="var(--text-main)" stroke-width="1.5" opacity="0.4"></line>
+                
+                <line x1="40" y1="85" x2="260" y2="85" stroke="var(--mint-accent)" stroke-width="1.5" stroke-dasharray="12 12" opacity="0.35"></line>
+                <line x1="40" y1="85" x2="260" y2="85" stroke="var(--mint-accent)" stroke-width="1.5" stroke-dasharray="30 150" class="anim-speed-dash2"></line>
+
+                <circle cx="40" cy="60" r="7" fill="var(--svg-node-fill)" stroke="var(--text-main)" stroke-width="1.5"></circle>
+                <circle cx="40" cy="60" r="3" fill="var(--mint-accent)"></circle>
+
+                <circle cx="260" cy="60" r="10" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                <circle cx="260" cy="60" r="6" fill="rgba(5, 150, 105, 0.15)" stroke="var(--mint-accent)" stroke-width="1.5"></circle>
+                <circle cx="260" cy="60" r="2.5" fill="var(--mint-accent)"></circle>
+                <circle cx="260" cy="60" r="16" fill="none" stroke="var(--mint-accent)" stroke-width="1.5" stroke-dasharray="3 3" class="anim-speed-dest-ring"></circle>
+
+                <circle class="anim-speed-dot-1" cx="40" cy="60" r="4" fill="var(--mint-accent)"></circle>
+                <circle class="anim-speed-dot-2" cx="40" cy="60" r="4" fill="var(--lilac-accent)"></circle>
+                <circle class="anim-speed-dot-3" cx="40" cy="60" r="4" fill="var(--mint-accent)"></circle>
+              </svg>
+            </div>
+            <span class="value-num">01</span>
+            <h3 class="value-title">
+              <span class="lang-en">Speed</span>
+              <span class="lang-ar">السرعة</span>
+            </h3>
+            <p class="value-desc">
+              <span class="lang-en">Rapid deployment and responsive frameworks designed to keep enterprise infrastructure aligned with fast-moving market demands.</span>
+              <span class="lang-ar">نشر سريع وأطر عمل مرنة مصممة لإبقاء البنية التحتية للمؤسسات متوافقة مع متطلبات السوق المتسارعة.</span>
+            </p>
+          </div>
+
+          <!-- Value 02 — Precision -->
+          <div class="value-card">
+            <div class="value-card-visual" aria-label="Precision motion illustration">
+              <svg class="value-svg" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Geometric reticle elements moving into alignment">
+                <rect width="300" height="120" fill="var(--svg-card-bg)"></rect>
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <circle cx="150" cy="60" r="48"></circle>
+                  <circle cx="150" cy="60" r="30"></circle>
+                  <circle cx="150" cy="60" r="14"></circle>
+                  <line x1="30" y1="60" x2="270" y2="60"></line>
+                  <line x1="150" y1="12" x2="150" y2="108"></line>
+                </g>
+
+                <g>
+                  <circle cx="150" cy="60" r="12" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                  <circle cx="150" cy="60" r="7" fill="rgba(126, 34, 206, 0.15)" stroke="var(--lilac-accent)" stroke-width="1.2"></circle>
+                  <circle cx="150" cy="60" r="3" fill="var(--mint-accent)"></circle>
+                  <circle cx="150" cy="60" r="18" fill="none" stroke="var(--mint-accent)" stroke-width="1.5" class="anim-precision-pulse"></circle>
+                </g>
+
+                <g class="anim-precision-top">
+                  <line x1="150" y1="22" x2="150" y2="38" stroke="var(--mint-accent)" stroke-width="2" stroke-linecap="round"></line>
+                  <circle cx="150" cy="20" r="2" fill="var(--mint-accent)"></circle>
+                </g>
+
+                <g class="anim-precision-bottom">
+                  <line x1="150" y1="82" x2="150" y2="98" stroke="var(--mint-accent)" stroke-width="2" stroke-linecap="round"></line>
+                  <circle cx="150" cy="100" r="2" fill="var(--mint-accent)"></circle>
+                </g>
+
+                <g class="anim-precision-left">
+                  <line x1="112" y1="60" x2="128" y2="60" stroke="var(--lilac-accent)" stroke-width="2" stroke-linecap="round"></line>
+                  <circle cx="110" cy="60" r="2" fill="var(--lilac-accent)"></circle>
+                </g>
+
+                <g class="anim-precision-right">
+                  <line x1="172" y1="60" x2="188" y2="60" stroke="var(--lilac-accent)" stroke-width="2" stroke-linecap="round"></line>
+                  <circle cx="190" cy="60" r="2" fill="var(--lilac-accent)"></circle>
+                </g>
+              </svg>
+            </div>
+            <span class="value-num">02</span>
+            <h3 class="value-title">
+              <span class="lang-en">Precision</span>
+              <span class="lang-ar">الدقة</span>
+            </h3>
+            <p class="value-desc">
+              <span class="lang-en">Exact architectural execution, seamless integration into legacy tools, and fault-tolerant infrastructure built for complex environments.</span>
+              <span class="lang-ar">تنفيذ معماري دقيق، وتكامل سلس مع الأنظمة الحالية، وبنية تحتية مقاومة للأخطاء مخصصة للبيئات المعقدة.</span>
+            </p>
+          </div>
+
+          <!-- Value 03 — Execution -->
+          <div class="value-card">
+            <div class="value-card-visual" aria-label="Execution motion illustration">
+              <svg class="value-svg" viewBox="0 0 300 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Connected geometric path drawing progressively">
+                <rect width="300" height="120" fill="var(--svg-card-bg)"></rect>
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="20" y1="40" x2="280" y2="40"></line>
+                  <line x1="20" y1="60" x2="280" y2="60"></line>
+                  <line x1="20" y1="80" x2="280" y2="80"></line>
+                </g>
+
+                <path d="M 40 75 L 110 40 L 190 80 L 260 45" stroke="var(--text-main)" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.25" fill="none"></path>
+                <path d="M 40 75 L 110 40 L 190 80 L 260 45" stroke="var(--mint-accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" class="anim-execution-path"></path>
+
+                <g transform="translate(40, 75)">
+                  <circle cx="0" cy="0" r="8" class="anim-exec-node1" fill="rgba(5, 150, 105, 0.15)" stroke="var(--mint-accent)" stroke-width="1.8"></circle>
+                  <circle cx="0" cy="0" r="3" fill="var(--mint-accent)"></circle>
+                </g>
+
+                <g transform="translate(110, 40)">
+                  <circle cx="0" cy="0" r="8" class="anim-exec-node2" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="1.8"></circle>
+                  <circle cx="0" cy="0" r="3" fill="var(--lilac-accent)"></circle>
+                </g>
+
+                <g transform="translate(190, 80)">
+                  <circle cx="0" cy="0" r="8" class="anim-exec-node3" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="1.8"></circle>
+                  <circle cx="0" cy="0" r="3" fill="var(--mint-accent)"></circle>
+                </g>
+
+                <g transform="translate(260, 45)">
+                  <circle cx="0" cy="0" r="16" fill="none" stroke="var(--mint-accent)" stroke-width="1.5" class="anim-exec-completion"></circle>
+                  <circle cx="0" cy="0" r="10" class="anim-exec-node4" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                  <circle cx="0" cy="0" r="4" fill="var(--mint-accent)"></circle>
+                </g>
+
+                <text x="40" y="100" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="8" font-weight="600" fill="var(--mint-accent)" text-anchor="middle" class="lang-en">PLAN</text>
+                <text x="40" y="100" font-family="'Tajawal', sans-serif" font-size="9" font-weight="700" fill="var(--mint-accent)" text-anchor="middle" class="lang-ar">المخطط</text>
+
+                <text x="260" y="24" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="8" font-weight="700" fill="var(--mint-accent)" text-anchor="middle" class="lang-en">OUTCOME</text>
+                <text x="260" y="24" font-family="'Tajawal', sans-serif" font-size="9" font-weight="700" fill="var(--mint-accent)" text-anchor="middle" class="lang-ar">النتيجة</text>
+              </svg>
+            </div>
+            <span class="value-num">03</span>
+            <h3 class="value-title">
+              <span class="lang-en">Execution</span>
+              <span class="lang-ar">التنفيذ</span>
+            </h3>
+            <p class="value-desc">
+              <span class="lang-en">A continuous commitment to practical outcomes, translating technology strategy into high-utility solutions that drive business momentum.</span>
+              <span class="lang-ar">التزام مستمر بالنتائج العملية، وتحويل استراتيجية التكنولوجيا إلى حلول عالية الفائدة تدفع زخم الأعمال.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Business Divisions Section (#divisions) -->
+    <section id="divisions" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <span class="lang-en">Business Architecture</span>
+            <span class="lang-ar">معمارية الأعمال</span>
+          </span>
+          <h2 class="section-title">
+            <span class="lang-en">Business Divisions</span>
+            <span class="lang-ar">قطاعات الأعمال</span>
+          </h2>
+          <p class="section-subtitle">
+            <span class="lang-en">Connecting and managing specialized divisions under the BABORIA.</span>
+            <span class="lang-ar">ربط وإدارة القطاعات المتخصصة تحت مظلة BABORIA ممكّن تكنولوجي.</span>
+          </p>
+        </div>
+
+        <div class="solutions-grid">
+          <!-- Division 1: BABORIA Solutions -->
+          <article class="solution-card">
+            <div class="solution-image-container">
+              <svg class="solution-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BABORIA Solutions technical sketch illustration">
+                <rect width="400" height="400" fill="var(--svg-card-bg)"></rect>
+                
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="40" y1="200" x2="360" y2="200"></line>
+                  <line x1="200" y1="40" x2="200" y2="360"></line>
+                  <circle cx="200" cy="200" r="140"></circle>
+                  <circle cx="200" cy="200" r="80"></circle>
+                </g>
+
+                <line x1="110" y1="110" x2="200" y2="200" stroke="var(--lilac-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow1"></line>
+                <line x1="290" y1="110" x2="200" y2="200" stroke="var(--mint-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow2"></line>
+
+                <circle class="div1-signal-1" cx="110" cy="110" r="4" fill="var(--mint-accent)"></circle>
+                <circle class="div1-signal-2" cx="290" cy="110" r="4" fill="var(--lilac-accent)"></circle>
+
+                <g class="anim-core-group">
+                  <circle cx="200" cy="200" r="48" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="3 3" class="anim-rotate-slow" fill="none"></circle>
+                  <polygon points="200,165 230,182.5 230,217.5 200,235 170,217.5 170,182.5" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></polygon>
+                  <circle cx="200" cy="200" r="8" fill="var(--lilac-accent)"></circle>
+                  <circle cx="200" cy="200" r="4" fill="var(--mint-accent)"></circle>
+                </g>
+
+                <g class="anim-node node-1">
+                  <circle cx="110" cy="110" r="18" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                  <circle cx="110" cy="110" r="8" fill="rgba(5, 150, 105, 0.2)" stroke="var(--mint-accent)" stroke-width="1.5"></circle>
+                </g>
+
+                <g class="anim-node node-2">
+                  <circle cx="290" cy="110" r="18" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                  <circle cx="290" cy="110" r="8" fill="rgba(126, 34, 206, 0.2)" stroke="var(--lilac-accent)" stroke-width="1.5"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="solution-body">
+              <span class="solution-tag">
+                <span class="lang-en">Division 01</span>
+                <span class="lang-ar">القطاع 01</span>
+              </span>
+              <h3 class="solution-title">BABORIA Solutions</h3>
+              <p class="solution-desc">
+                <span class="lang-en">Technology and digital infrastructure powering operational scale and connectivity.</span>
+                <span class="lang-ar">التكنولوجيا والبنية التحتية الرقمية التي تدعم التوسع التشغيلي والربط.</span>
+              </p>
+              
+              <ul class="capability-list">
+                <li class="capability-item">
+                  <span class="capability-bullet"></span>
+                  <div>
+                    <strong>
+                      <span class="lang-en">AI Workforce Automation</span>
+                      <span class="lang-ar">أتمتة القوى العاملة بالذكاء الاصطناعي</span>
+                    </strong>
+                    <span class="capability-note">
+                      <span class="lang-en">AI agents that plug into your existing tools to take repetitive tasks off your team's plate (includes AI MASTER).</span>
+                      <span class="lang-ar">وكلاء ذكاء اصطناعي يتكاملون مع أدواتك الحالية لتولي المهام المتكررة (تتضمن منصة AI MASTER).</span>
+                    </span>
+                  </div>
+                </li>
+                <li class="capability-item">
+                  <span class="capability-bullet"></span>
+                  <div>
+                    <strong>
+                      <span class="lang-en">Telecom Services (DCB)</span>
+                      <span class="lang-ar">خدمات الاتصالات (DCB)</span>
+                    </strong>
+                    <span class="capability-note">
+                      <span class="lang-en">Direct carrier billing and connectivity infrastructure that turns a phone number into a payment method.</span>
+                      <span class="lang-ar">بنية التحصيل المباشر عبر شبكات الاتصالات والبنية التحتية للربط التي تحول رقم الهاتف إلى وسيلة دفع.</span>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Division 2: NORTH X -->
+          <article class="solution-card">
+            <div class="solution-image-container">
+              <svg class="solution-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="NORTH X commerce and logistics illustration">
+                <rect width="400" height="400" fill="var(--svg-card-bg)"></rect>
+
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="40" y1="200" x2="360" y2="200"></line>
+                  <line x1="200" y1="40" x2="200" y2="360"></line>
+                  <polygon points="200,80 320,200 200,320 80,200"></polygon>
+                </g>
+
+                <polygon points="200,80 320,200 200,320 80,200" stroke="var(--lilac-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow1" fill="none"></polygon>
+                
+                <line x1="200" y1="80" x2="200" y2="200" stroke="var(--lilac-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow2"></line>
+                <line x1="320" y1="200" x2="200" y2="200" stroke="var(--mint-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow1"></line>
+
+                <circle class="div2-signal-1" cx="200" cy="80" r="4" fill="var(--lilac-accent)"></circle>
+                <circle class="div2-signal-2" cx="320" cy="200" r="4" fill="var(--mint-accent)"></circle>
+
+                <g class="anim-core-group">
+                  <circle cx="200" cy="200" r="48" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="3 3" class="anim-rotate-slow" fill="none"></circle>
+                  <g transform="translate(200, 200)">
+                    <polygon points="0,-24 21,-12 21,12 0,24 -21,12 -21,-12" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></polygon>
+                    <line x1="0" y1="-24" x2="0" y2="24" stroke="var(--lilac-accent)" stroke-width="1.5"></line>
+                  </g>
+                </g>
+
+                <g class="anim-node node-1">
+                  <circle cx="200" cy="80" r="16" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                  <rect x="193" y="73" width="14" height="14" fill="rgba(126, 34, 206, 0.2)" stroke="var(--lilac-accent)" stroke-width="1.5"></rect>
+                </g>
+
+                <g class="anim-node node-2">
+                  <circle cx="320" cy="200" r="16" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="2"></circle>
+                  <rect x="313" y="193" width="14" height="14" fill="rgba(5, 150, 105, 0.2)" stroke="var(--mint-accent)" stroke-width="1.5"></rect>
+                </g>
+              </svg>
+            </div>
+            <div class="solution-body">
+              <span class="solution-tag">
+                <span class="lang-en">Division 02</span>
+                <span class="lang-ar">القطاع 02</span>
+              </span>
+              <h3 class="solution-title">NORTH X</h3>
+              <p class="solution-desc">
+                <span class="lang-en">Commerce, trade, and distribution supply chain capabilities.</span>
+                <span class="lang-ar">قدرات التجارة، والتوزيع، وسلاسل الإمداد.</span>
+              </p>
+              
+              <ul class="capability-list">
+                <li class="capability-item">
+                  <span class="capability-bullet"></span>
+                  <div>
+                    <strong>
+                      <span class="lang-en">FMCG Supply Chain Integration</span>
+                      <span class="lang-ar">تكامل سلاسل إمداد السلع الاستهلاكية</span>
+                    </strong>
+                    <span class="capability-note">
+                      <span class="lang-en">Includes RIKAZ application ecosystem.</span>
+                      <span class="lang-ar">تتضمن منظومة تطبيق RIKAZ.</span>
+                    </span>
+                  </div>
+                </li>
+                <li class="capability-item">
+                  <span class="capability-bullet"></span>
+                  <div>
+                    <strong>
+                      <span class="lang-en">B2B Wholesale &amp; Distribution</span>
+                      <span class="lang-ar">تجارة الجملة والتوزيع بين الشركات</span>
+                    </strong>
+                  </div>
+                </li>
+                <li class="capability-item">
+                  <span class="capability-bullet"></span>
+                  <div>
+                    <strong>
+                      <span class="lang-en">Import &amp; Export Solutions</span>
+                      <span class="lang-ar">حلول الاستيراد والتصدير</span>
+                    </strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Division 3: ROOTA -->
+          <article class="solution-card">
+            <div class="solution-image-container">
+              <svg class="solution-svg" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ROOTA software development and digital media illustration">
+                <rect width="400" height="400" fill="var(--svg-card-bg)"></rect>
+
+                <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+                  <line x1="40" y1="200" x2="360" y2="200"></line>
+                  <line x1="200" y1="40" x2="200" y2="360"></line>
+                  <circle cx="200" cy="200" r="150"></circle>
+                  <circle cx="200" cy="200" r="110"></circle>
+                </g>
+
+                <path d="M 80 200 A 120 120 0 0 1 320 200" stroke="var(--lilac-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow1" fill="none" stroke-linecap="round"></path>
+                <path d="M 320 200 A 120 120 0 0 1 80 200" stroke="var(--mint-accent)" stroke-width="2" stroke-dasharray="8 8" class="anim-dash-flow2" fill="none" stroke-linecap="round"></path>
+
+                <g class="anim-core-group">
+                  <circle cx="200" cy="200" r="48" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="3 3" class="anim-rotate-slow" fill="none"></circle>
+                  <circle cx="200" cy="200" r="32" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                  <polygon points="195,190 210,200 195,210" fill="var(--lilac-accent)"></polygon>
+                </g>
+
+                <g class="anim-node node-1">
+                  <circle cx="115" cy="115" r="14" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+                  <circle cx="115" cy="115" r="6" fill="rgba(126, 34, 206, 0.2)" stroke="var(--lilac-accent)" stroke-width="1"></circle>
+                </g>
+
+                <g class="anim-node node-2">
+                  <circle cx="285" cy="115" r="14" fill="var(--svg-node-fill)" stroke="var(--mint-accent)" stroke-width="2"></circle>
+                  <circle cx="285" cy="115" r="6" fill="rgba(5, 150, 105, 0.2)" stroke="var(--mint-accent)" stroke-width="1"></circle>
+                </g>
+              </svg>
+            </div>
+            <div class="solution-body">
+              <span class="solution-tag">
+                <span class="lang-en">Division 03</span>
+                <span class="lang-ar">القطاع 03</span>
+              </span>
+              <h3 class="solution-title">ROOTA</h3>
+              <p class="solution-desc">
+                <span class="lang-en">Custom software design, development, and digital media solutions.</span>
+                <span class="lang-ar">تصميم وتطوير البرمجيات المخصصة وحلول الإعلام الرقمي.</span>
+              </p>
+              
+              <ul class="capability-list">
+                <li class="capability-item">
+                  <span class="capability-bullet"></span>
+                  <div>
+                    <strong>
+                      <span class="lang-en">Software Design &amp; Development</span>
+                      <span class="lang-ar">تصميم وتطوير البرمجيات</span>
+                    </strong>
+                    <span class="capability-note">
+                      <span class="lang-en">Built from initial MVP to enterprise scale.</span>
+                      <span class="lang-ar">بناء البرمجيات من النموذج الأول (MVP) حتى النطاق المؤسسي.</span>
+                    </span>
+                  </div>
+                </li>
+                <li class="capability-item">
+                  <span class="capability-bullet"></span>
+                  <div>
+                    <strong>
+                      <span class="lang-en">Digital Media Operations</span>
+                      <span class="lang-ar">عمليات الإعلام الرقمي</span>
+                    </strong>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Structure / Ecosystem Section (#structure) -->
+    <section id="structure" class="pillars-section section-padding">
+      <div class="pillars-backdrop">
+        <svg class="pillars-bg-svg" viewBox="0 0 1200 650" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="BABORIA ecosystem line art background">
+          <g stroke="var(--text-main)" stroke-opacity="0.08" stroke-width="1" stroke-dasharray="2 4">
+            <line x1="100" y1="325" x2="1100" y2="325"></line>
+            <line x1="600" y1="50" x2="600" y2="600"></line>
+            <circle cx="600" cy="325" r="280"></circle>
+            <circle cx="600" cy="325" r="180"></circle>
+          </g>
+
+          <polygon points="600,65 1050,325 600,585 150,325" stroke="var(--lilac-accent)" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="6 6" fill="none"></polygon>
+
+          <line x1="200" y1="120" x2="600" y2="325" stroke="var(--mint-accent)" stroke-width="1.5" stroke-dasharray="8 8" class="anim-dash-flow1" opacity="0.6"></line>
+          <line x1="1000" y1="120" x2="600" y2="325" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="8 8" class="anim-dash-flow2" opacity="0.6"></line>
+
+          <g class="anim-core-group">
+            <circle cx="600" cy="325" r="54" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-dasharray="3 3" class="anim-rotate-slow" fill="none"></circle>
+            <circle cx="600" cy="325" r="44" fill="var(--svg-node-fill)" stroke="var(--lilac-accent)" stroke-width="2"></circle>
+            <circle cx="600" cy="325" r="8" fill="var(--lilac-accent)"></circle>
+            <circle cx="600" cy="325" r="4" fill="var(--mint-accent)"></circle>
+          </g>
+
+          <!-- System Loading Module with BABORIA Signature Motion -->
+          <g class="baboria-system-loading-module">
+            <rect x="490" y="42" width="220" height="38" rx="4" fill="var(--bg-card)" stroke="var(--lilac-accent)" stroke-width="1.5" stroke-opacity="0.8"></rect>
+            <text x="600" y="34" font-family="'Reddit Sans', 'Tajawal', sans-serif" font-size="9" font-weight="700" fill="var(--mint-accent)" text-anchor="middle" letter-spacing="1.5" class="lang-en">SYSTEM READY</text>
+            <text x="600" y="34" font-family="'Tajawal', sans-serif" font-size="10" font-weight="700" fill="var(--mint-accent)" text-anchor="middle" class="lang-ar">النظام جاهز</text>
+
+            <!-- Dash + 3 Dots Motion Sequence -->
+            <g transform="translate(600, 60)">
+              <line x1="-45" y1="0" x2="-15" y2="0" stroke="var(--lilac-accent)" stroke-width="4" stroke-linecap="round"></line>
+              <circle class="baboria-loading-dot dot-seq-1" cx="5" cy="0" r="4.5"></circle>
+              <circle class="baboria-loading-dot dot-seq-2" cx="23" cy="0" r="4.5"></circle>
+              <circle class="baboria-loading-dot dot-seq-3" cx="41" cy="0" r="4.5"></circle>
+            </g>
+          </g>
+        </svg>
+
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">
+              <span class="lang-en">Corporate Alignment</span>
+              <span class="lang-ar">التوافق المؤسسي</span>
+            </span>
+            <h2 class="section-title">
+              <span class="lang-en">Ecosystem Structure</span>
+              <span class="lang-ar">هيكل منظومة الأعمال</span>
+            </h2>
+            <p class="section-subtitle">
+              <span class="lang-en">How BABORIA as parent company manages technology enablers and business units.</span>
+              <span class="lang-ar">كيف تدير BABORIA كشركة أم الممكّنات التكنولوجية ووحدات الأعمال.</span>
+            </p>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-item">
+              <div class="pillar-icon-box">01</div>
+              <div class="pillar-content">
+                <h3>
+                  <span class="lang-en">BABORIA (Parent Company)</span>
+                  <span class="lang-ar">BABORIA (الشركة الأم)</span>
+                </h3>
+                <p>
+                  <span class="lang-en">Technology Enabler connecting and managing specialized business divisions to unify enterprise technology, trade, and media.</span>
+                  <span class="lang-ar">ممكّن تكنولوجي يربط ويدير قطاعات الأعمال المتخصصة لتوحيد تكنولوجيا المؤسسات والتجارة والإعلام.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box">02</div>
+              <div class="pillar-content">
+                <h3>BABORIA Solutions</h3>
+                <p>
+                  <span class="lang-en">Delivers technology and digital infrastructure including AI Workforce Automation (AI MASTER) and Telecom Services (DCB).</span>
+                  <span class="lang-ar">يقدم التكنولوجيا والبنية التحتية الرقمية بما في ذلك أتمتة القوى العاملة بالذكاء الاصطناعي (AI MASTER) وخدمات الاتصالات (DCB).</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box">03</div>
+              <div class="pillar-content">
+                <h3>
+                  <span class="lang-en">NORTH X &amp; Trade</span>
+                  <span class="lang-ar">NORTH X والتجارة</span>
+                </h3>
+                <p>
+                  <span class="lang-en">Drives commerce, trade, and supply chain distribution across FMCG (RIKAZ), B2B wholesale, and import/export.</span>
+                  <span class="lang-ar">يقود التجارة وسلاسل التوزيع عبر السلع الاستهلاكية (تطبيق RIKAZ)، وتجارة الجملة، والاستيراد والتصدير.</span>
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-icon-box">04</div>
+              <div class="pillar-content">
+                <h3>
+                  <span class="lang-en">ROOTA Operations</span>
+                  <span class="lang-ar">عمليات ROOTA</span>
+                </h3>
+                <p>
+                  <span class="lang-en">Delivers custom software design and development from initial MVP to enterprise scale alongside digital media operations.</span>
+                  <span class="lang-ar">يقدم تصميم وتطوير البرمجيات المخصصة من النموذج الأول (MVP) حتى التوسع المؤسسي إلى جانب عمليات الإعلام الرقمي.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Positioning Strip -->
+    <section class="positioning-strip">
+      <div class="container">
+        <div class="strip-grid">
+          <div class="strip-item">
+            <h4>
+              <span class="lang-en">Positioning</span>
+              <span class="lang-ar">المكانة</span>
+            </h4>
+            <p>
+              <span class="lang-en">Premium Utility</span>
+              <span class="lang-ar">فائدة فائقة</span>
+            </p>
+          </div>
+          <div class="strip-item">
+            <h4>
+              <span class="lang-en">Innovation</span>
+              <span class="lang-ar">الابتكار</span>
+            </h4>
+            <p>
+              <span class="lang-en">Differentiated</span>
+              <span class="lang-ar">متميز</span>
+            </p>
+          </div>
+          <div class="strip-item">
+            <h4>
+              <span class="lang-en">Market Focus</span>
+              <span class="lang-ar">التركيز السوقي</span>
+            </h4>
+            <p>
+              <span class="lang-en">Selective</span>
+              <span class="lang-ar">مُنتقى</span>
+            </p>
+          </div>
+          <div class="strip-item">
+            <h4>
+              <span class="lang-en">Design Era</span>
+              <span class="lang-ar">طراز التصميم</span>
+            </h4>
+            <p>
+              <span class="lang-en">Modern Grid</span>
+              <span class="lang-ar">شبكي حديث</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <span class="brand-lockup footer-lockup" role="img" aria-label="Baboria"><svg class="brand-mark" viewBox="0 0 750 100" aria-hidden="true" focusable="false"><rect x="0" y="0" width="300" height="100" fill="#EC3013"/><rect x="350" y="0" width="100" height="100" fill="currentColor"/><rect x="500" y="0" width="100" height="100" fill="currentColor"/><rect x="650" y="0" width="100" height="100" fill="currentColor"/></svg><span class="brand-word">BABORIA</span></span>
+            <p class="footer-about">
+              <span class="lang-en">Technology that enables. Solutions that move business forward.</span>
+              <span class="lang-ar">تكنولوجيا تمكّن. حلول تدفع الأعمال إلى الأمام.</span>
+            </p>
+            <p class="footer-address">
+              <i class="fas fa-map-marker-alt" style="color: var(--mint-accent);"></i>
+              <span class="lang-en">Cairo, Maadi, EG</span>
+              <span class="lang-ar">القاهرة، المعادي، مصر</span>
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">
+              <span class="lang-en">Navigation</span>
+              <span class="lang-ar">التنقل</span>
+            </h4>
+            <ul class="footer-links">
+              <li><a href="#overview"><span class="lang-en">Overview</span><span class="lang-ar">نظرة عامة</span></a></li>
+              <li><a href="#capabilities"><span class="lang-en">Capabilities</span><span class="lang-ar">القدرات</span></a></li>
+              <li><a href="#values"><span class="lang-en">Core Values</span><span class="lang-ar">القيم الأساسية</span></a></li>
+              <li><a href="#divisions"><span class="lang-en">Divisions</span><span class="lang-ar">القطاعات</span></a></li>
+              <li><a href="#structure"><span class="lang-en">Structure</span><span class="lang-ar">الهيكل المؤسسي</span></a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">
+              <span class="lang-en">Connect</span>
+              <span class="lang-ar">التواصل</span>
+            </h4>
+            <ul class="footer-links">
+              <li>
+                <a href="https://www.baboria.com/" target="_blank" rel="noopener">www.baboria.com</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/company/146270288/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin" style="font-size: 1.1rem;"></i> LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            <span class="lang-en">© Baboria. All rights reserved.</span>
+            <span class="lang-ar">© BABORIA. جميع الحقوق محفوظة.</span>
+          </p>
+          <p>
+            <span class="lang-en">Values: Speed • Precision • Execution</span>
+            <span class="lang-ar">القيم: السرعة • الدقة • التنفيذ</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body></html>
