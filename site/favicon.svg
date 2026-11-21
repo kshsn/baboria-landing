@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -30 810 160">
+  <style>.d{fill:#17275C}@media (prefers-color-scheme:dark){.d{fill:#F3F2F2}}</style>
+  <rect x="0" y="0" width="300" height="100" fill="#EC3013"/>
+  <rect class="d" x="350" y="0" width="100" height="100"/>
+  <rect class="d" x="500" y="0" width="100" height="100"/>
+  <rect class="d" x="650" y="0" width="100" height="100"/>
+</svg>
